@@ -20,7 +20,15 @@ function buildPage(S, K, opts) {
       '</p><div class="mt-2 flex items-center justify-between"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span></div></div></div>';
   };
 
-  const cats = K.categories || [];
+  // Section link IDs are generated from each category title (unique, no typing needed).
+  const used = {};
+  const cats = (K.categories || []).map(function (c, n) {
+    let base = String(c.title || 'section').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'section';
+    let id = base, k = 2;
+    while (used[id]) id = base + '-' + k++;
+    used[id] = true;
+    return Object.assign({}, c, { id: id });
+  });
   const pill = 'rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70 transition hover:border-[#5fd6c4] hover:text-[#5fd6c4]';
   return (
     '<header class="sticky top-0 z-40 border-b border-white/10 bg-[#04222b]/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">' +
