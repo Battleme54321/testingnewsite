@@ -19,7 +19,7 @@
           "size": "2-2.5\"",
           "price": "$85",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Blue Phantom Pleco (L128)",
