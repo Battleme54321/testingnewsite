@@ -38,6 +38,42 @@
       ]
     },
     {
+      "id": "loricariidae",
+      "title": "Loricariidae",
+      "nav_label": "Loricariidae",
+      "description": "Plecos and armored catfish.",
+      "items": [
+        {
+          "name": "Green Phantom Pleco (L200)",
+          "size": "2.5-3\"",
+          "price": "$65",
+          "image": "/img/pleco-green-phantom.png",
+          "sold_out": false
+        },
+        {
+          "name": "Gold Nugget Pleco (L018)",
+          "size": "2-2.5\"",
+          "price": "$85",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": false
+        },
+        {
+          "name": "Blue Phantom Pleco (L128)",
+          "size": "2.5-3\"",
+          "price": "$60",
+          "image": "/img/pleco-green-phantom.png",
+          "sold_out": false
+        },
+        {
+          "name": "Albino Bristlenose Pleco",
+          "size": "1.5-2\"",
+          "price": "2/$30",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": true
+        }
+      ]
+    },
+    {
       "id": "corydoras",
       "title": "Corydoras",
       "nav_label": "Corydoras",
