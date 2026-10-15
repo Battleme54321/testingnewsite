@@ -46,6 +46,7 @@ collections:
           - { name: email, label: Order email, widget: string }
           - { name: instagram, label: Instagram link, widget: string }
           - { name: facebook, label: Facebook link, widget: string }
+          - { name: logo_image, label: Logo (shown at top of page), widget: image }
           - { name: hero_image, label: Hero photo, widget: image }
           - { name: hero_eyebrow, label: Small text above headline, widget: string }
           - { name: hero_title, label: Headline, widget: string }

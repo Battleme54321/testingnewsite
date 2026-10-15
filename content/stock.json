@@ -1,46 +1,8 @@
 {
-  "stock_date": "October 15, 2026",
   "categories": [
     {
       "id": "loricariidae",
       "title": "Loricariidae",
-      "nav_label": "Loricariidae",
-      "description": "Plecos and armored catfish.",
-      "items": [
-        {
-          "name": "Green Phantom Pleco (L200)",
-          "size": "2.5-3\"",
-          "price": "$65",
-          "image": "/img/pleco-green-phantom.png",
-          "sold_out": false
-        },
-        {
-          "name": "Gold Nugget Pleco (L018)",
-          "size": "2-2.5\"",
-          "price": "$85",
-          "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
-        },
-        {
-          "name": "Blue Phantom Pleco (L128)",
-          "size": "2.5-3\"",
-          "price": "$60",
-          "image": "/img/pleco-green-phantom.png",
-          "sold_out": false
-        },
-        {
-          "name": "Albino Bristlenose Pleco",
-          "size": "1.5-2\"",
-          "price": "2/$30",
-          "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
-        }
-      ]
-    },
-    {
-      "id": "loricariidae",
-      "title": "Loricariidae",
-      "nav_label": "Loricariidae",
       "description": "Plecos and armored catfish.",
       "items": [
         {
@@ -71,19 +33,19 @@
           "image": "/img/pleco-gold-nugget.png",
           "sold_out": true
         }
-      ]
+      ],
+      "nav_label": "Loricariidae"
     },
     {
       "id": "corydoras",
       "title": "Corydoras",
-      "nav_label": "Corydoras",
       "description": "",
       "items": [
         {
           "name": "Sterbai Cory",
           "size": "1-1.25\"",
           "price": "6/$50",
-          "image": "/img/Screenshot 2026-10-15 at 5.41.02 PM.png",
+          "image": "/img/cory-sterbai.png",
           "sold_out": false
         },
         {
@@ -107,12 +69,12 @@
           "image": "/img/cory-panda.png",
           "sold_out": true
         }
-      ]
+      ],
+      "nav_label": "Corydoras"
     },
     {
       "id": "tetra",
       "title": "Tetra / Nannostomus",
-      "nav_label": "Tetra",
       "description": "",
       "items": [
         {
@@ -150,12 +112,12 @@
           "image": "/img/tetra-rummynose.png",
           "sold_out": false
         }
-      ]
+      ],
+      "nav_label": "Tetra"
     },
     {
       "id": "rasbora",
       "title": "Rasbora",
-      "nav_label": "Rasbora",
       "description": "",
       "items": [
         {
@@ -179,12 +141,12 @@
           "image": "/img/rasbora-harlequin.png",
           "sold_out": true
         }
-      ]
+      ],
+      "nav_label": "Rasbora"
     },
     {
       "id": "rainbowfish",
       "title": "Rainbowfish",
-      "nav_label": "Rainbowfish",
       "description": "",
       "items": [
         {
@@ -208,12 +170,12 @@
           "image": "/img/rainbow-dwarf-neon.png",
           "sold_out": true
         }
-      ]
+      ],
+      "nav_label": "Rainbowfish"
     },
     {
       "id": "other",
       "title": "Other",
-      "nav_label": "Other",
       "description": "",
       "items": [
         {
@@ -251,12 +213,12 @@
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         }
-      ]
+      ],
+      "nav_label": "Other"
     },
     {
       "id": "dry-goods",
       "title": "Dry Goods",
-      "nav_label": "Dry Goods",
       "description": "",
       "items": [
         {
@@ -286,36 +248,10 @@
           "price": "$8",
           "image": "/img/dry-goods-flatlay.png",
           "sold_out": false
-        },
-        {
-          "name": "Indian Almond Leaves",
-          "size": "Bundle of 10",
-          "price": "$8",
-          "image": "/img/dry-goods-flatlay.png",
-          "sold_out": false
-        },
-        {
-          "name": "Indian Almond Leaves",
-          "size": "Bundle of 10",
-          "price": "$8",
-          "image": "/img/dry-goods-flatlay.png",
-          "sold_out": false
-        },
-        {
-          "name": "Indian Almond Leaves",
-          "size": "Bundle of 10",
-          "price": "$8",
-          "image": "/img/dry-goods-flatlay.png",
-          "sold_out": false
-        },
-        {
-          "name": "Indian Almond Leaves",
-          "size": "Bundle of 10",
-          "price": "$8",
-          "image": "/img/dry-goods-flatlay.png",
-          "sold_out": false
         }
-      ]
+      ],
+      "nav_label": "Dry Goods"
     }
-  ]
+  ],
+  "stock_date": "October 15, 2026"
 }

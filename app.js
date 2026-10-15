@@ -12,16 +12,12 @@ function buildPage(S, K, opts) {
 
   const card = i => {
     const so = i.sold_out;
-    const act = so
-      ? '<span class="text-xs font-medium text-white/40">Unavailable</span>'
-      : '<a href="' + esc(mail('Order inquiry: ' + i.name, "Hi! I'd like to order the " + i.name + ' (' + i.size + ', ' + i.price + '). Is it still available?')) +
-        '" class="rounded-full border border-[#5fd6c4]/60 px-3 py-1 text-xs font-semibold text-[#5fd6c4] transition hover:bg-[#5fd6c4] hover:text-[#04222b]">Order</a>';
     return '<div class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:border-[#5fd6c4]/50 hover:bg-white/[0.07]">' +
       '<div class="relative aspect-[4/3] w-full overflow-hidden bg-black/40"><img src="' + esc(img(i.image, '&w=480&h=360&fit=cover&fm=webp')) + '" alt="' + esc(i.name) +
       '" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105 ' + (so ? 'opacity-40' : '') + '">' +
-      (so ? '<span class="absolute right-3 top-3 rounded-full bg-black/70 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Sold out</span>' : '') +
+      (so ? '<span style="background:#dc2626" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Sold out</span>' : '') +
       '</div><div class="flex flex-1 flex-col gap-1 p-4"><h3 class="font-semibold text-white">' + esc(i.name) + '</h3><p class="text-sm text-white/60">' + esc(i.size) +
-      '</p><div class="mt-2 flex items-center justify-between"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span>' + act + '</div></div></div>';
+      '</p><div class="mt-2 flex items-center justify-between"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span></div></div></div>';
   };
 
   const cats = K.categories || [];
@@ -37,7 +33,9 @@ function buildPage(S, K, opts) {
 
     '<section class="relative overflow-hidden border-b border-white/10"><img src="' + esc(img(S.hero_image, '&w=1600&fm=webp&q=80')) + '" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">' +
     '<div class="absolute inset-0 bg-gradient-to-b from-[#04222b]/60 via-[#04222b]/80 to-[#04222b]"></div>' +
-    '<div class="relative mx-auto max-w-6xl px-5 py-24 text-center sm:py-32"><p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd6c4]">' + esc(S.hero_eyebrow) + '</p>' +
+    '<div class="relative mx-auto max-w-6xl px-5 py-16 text-center sm:py-24">' +
+    (S.logo_image ? '<img src="' + esc(img(S.logo_image, '&w=480&fm=png')) + '" alt="' + esc(S.brand_first + ' ' + S.brand_second) + '" class="mx-auto" style="width:200px;max-width:55%;height:auto;margin-bottom:28px">' : '') +
+    '<p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd6c4]">' + esc(S.hero_eyebrow) + '</p>' +
     '<h1 class="mx-auto max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">' + esc(S.hero_title) + '</h1><p class="mx-auto mt-5 max-w-xl text-white/70">' + esc(S.hero_text) + '</p>' +
     '<div class="mt-8 flex flex-wrap items-center justify-center gap-4"><a href="#stock" class="' + btnP + '">Browse current stock</a><a href="' + esc(mail()) + '" class="' + btnS + '">Place an order</a></div></div></section>' +
 
