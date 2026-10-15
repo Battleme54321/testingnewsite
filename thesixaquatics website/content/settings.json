@@ -1,0 +1,25 @@
+{
+  "brand_first": "The Six",
+  "brand_second": "Aquatics",
+  "email": "orders@thesixaquatics.example",
+  "instagram": "https://instagram.com",
+  "facebook": "https://facebook.com",
+  "hero_image": "/img/hero-tank.png",
+  "hero_eyebrow": "Toronto, Ontario",
+  "hero_title": "Your go-to destination for high quality tropical fish",
+  "hero_text": "Hand-picked plecos, corydoras, tetras, rasboras and more. Fresh stock updated regularly, shipped and delivered across the GTA and Canada-wide.",
+  "info_cards": [
+    {
+      "title": "Same-day GTA delivery",
+      "text": "Durham, Halton, Peel & York — starting at $15, delivered carefully in insulated, heated bags."
+    },
+    {
+      "title": "Canada-wide shipping",
+      "text": "Airport-to-airport shipping available across Canada for orders outside the GTA."
+    }
+  ],
+  "stock_note": "Sizes are average — actual fish may be slightly bigger or smaller.",
+  "contact_title": "Ready to place an order?",
+  "contact_text": "To place an order, contact us by email or send a DM on Facebook or Instagram. We'll confirm availability, pricing and delivery or shipping options with you directly.",
+  "footer": "The Six Aquatics. Toronto, Ontario."
+}
