@@ -1,8 +1,10 @@
 {
+  "stock_date": "October 15, 2026",
   "categories": [
     {
       "id": "loricariidae",
       "title": "Loricariidae",
+      "nav_label": "Loricariidae",
       "description": "Plecos and armored catfish.",
       "items": [
         {
@@ -33,19 +35,19 @@
           "image": "/img/pleco-gold-nugget.png",
           "sold_out": true
         }
-      ],
-      "nav_label": "Loricariidae"
+      ]
     },
     {
       "id": "corydoras",
       "title": "Corydoras",
+      "nav_label": "Corydoras",
       "description": "",
       "items": [
         {
           "name": "Sterbai Cory",
           "size": "1-1.25\"",
           "price": "6/$50",
-          "image": "/img/cory-sterbai.png",
+          "image": "/img/Screenshot 2026-10-15 at 5.41.02 PM.png",
           "sold_out": false
         },
         {
@@ -69,12 +71,12 @@
           "image": "/img/cory-panda.png",
           "sold_out": true
         }
-      ],
-      "nav_label": "Corydoras"
+      ]
     },
     {
       "id": "tetra",
       "title": "Tetra / Nannostomus",
+      "nav_label": "Tetra",
       "description": "",
       "items": [
         {
@@ -112,12 +114,12 @@
           "image": "/img/tetra-rummynose.png",
           "sold_out": false
         }
-      ],
-      "nav_label": "Tetra"
+      ]
     },
     {
       "id": "rasbora",
       "title": "Rasbora",
+      "nav_label": "Rasbora",
       "description": "",
       "items": [
         {
@@ -141,12 +143,12 @@
           "image": "/img/rasbora-harlequin.png",
           "sold_out": true
         }
-      ],
-      "nav_label": "Rasbora"
+      ]
     },
     {
       "id": "rainbowfish",
       "title": "Rainbowfish",
+      "nav_label": "Rainbowfish",
       "description": "",
       "items": [
         {
@@ -170,12 +172,12 @@
           "image": "/img/rainbow-dwarf-neon.png",
           "sold_out": true
         }
-      ],
-      "nav_label": "Rainbowfish"
+      ]
     },
     {
       "id": "other",
       "title": "Other",
+      "nav_label": "Other",
       "description": "",
       "items": [
         {
@@ -213,12 +215,12 @@
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         }
-      ],
-      "nav_label": "Other"
+      ]
     },
     {
       "id": "dry-goods",
       "title": "Dry Goods",
+      "nav_label": "Dry Goods",
       "description": "",
       "items": [
         {
@@ -249,9 +251,7 @@
           "image": "/img/dry-goods-flatlay.png",
           "sold_out": false
         }
-      ],
-      "nav_label": "Dry Goods"
+      ]
     }
-  ],
-  "stock_date": "October 15, 2026"
+  ]
 }
