@@ -250,6 +250,34 @@
           "price": "$8",
           "image": "/img/dry-goods-flatlay.png",
           "sold_out": false
+        },
+        {
+          "name": "Indian Almond Leaves",
+          "size": "Bundle of 10",
+          "price": "$8",
+          "image": "/img/dry-goods-flatlay.png",
+          "sold_out": false
+        },
+        {
+          "name": "Indian Almond Leaves",
+          "size": "Bundle of 10",
+          "price": "$8",
+          "image": "/img/dry-goods-flatlay.png",
+          "sold_out": false
+        },
+        {
+          "name": "Indian Almond Leaves",
+          "size": "Bundle of 10",
+          "price": "$8",
+          "image": "/img/dry-goods-flatlay.png",
+          "sold_out": false
+        },
+        {
+          "name": "Indian Almond Leaves",
+          "size": "Bundle of 10",
+          "price": "$8",
+          "image": "/img/dry-goods-flatlay.png",
+          "sold_out": false
         }
       ]
     }
