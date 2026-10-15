@@ -14,7 +14,7 @@ function buildPage(S, K, opts) {
     const so = i.sold_out;
     return '<div class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:border-[#5fd6c4]/50 hover:bg-white/[0.07]">' +
       '<div class="relative aspect-[4/3] w-full overflow-hidden bg-black/40"><img src="' + esc(img(i.image, '&w=480&h=360&fit=cover&fm=webp')) + '" alt="' + esc(i.name) +
-      '" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105 ' + '"' + (so ? ' style="opacity:0.2"' : '') + '>' +
+      '" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105 ' + '"' + (so ? ' style="opacity:0.08"' : '') + '>' +
       (so ? '<span style="background:#dc2626" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Sold out</span>' : '') +
       '</div><div class="flex flex-1 flex-col gap-1 p-4"><h3 class="font-semibold text-white">' + esc(i.name) + '</h3><p class="text-sm text-white/60">' + esc(i.size) +
       '</p><div class="mt-2 flex items-center justify-between"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span></div></div></div>';
