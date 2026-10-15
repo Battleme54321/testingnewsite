@@ -1,11 +1,9 @@
 // Renders the page from content/settings.json and content/stock.json (edited via /admin).
-(async function () {
-  const [S, K] = await Promise.all([
-    fetch('/content/settings.json').then(r => r.json()),
-    fetch('/content/stock.json').then(r => r.json())
-  ]);
+// buildPage() is also used by the live preview in /admin.
+function buildPage(S, K, opts) {
+  opts = opts || {};
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const img = (p, q) => '/.netlify/images?url=' + encodeURIComponent(p) + q;
+  const img = (p, q) => opts.raw ? p : '/.netlify/images?url=' + encodeURIComponent(p) + q;
   const mail = (subj, body) => 'mailto:' + S.email + (subj ? '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body) : '');
   const ig = '<svg viewBox="0 0 24 24" fill="none" class="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"></circle></svg>';
   const fb = '<svg viewBox="0 0 24 24" fill="none" class="h-5 w-5"><path d="M15 8.5h-1.5c-.6 0-1 .5-1 1.1V11H15l-.3 2.2h-2.2V21h-2.4v-7.8H8.5V11h1.6V9.3c0-2 1.2-3.3 3.2-3.3H15v2.5Z" fill="currentColor"></path></svg>';
@@ -28,7 +26,7 @@
 
   const cats = K.categories || [];
   const pill = 'rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70 transition hover:border-[#5fd6c4] hover:text-[#5fd6c4]';
-  document.getElementById('app').innerHTML =
+  return (
     '<header class="sticky top-0 z-40 border-b border-white/10 bg-[#04222b]/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">' +
     '<a href="#top" class="flex items-center gap-2"><span class="text-xl font-bold tracking-tight text-white">' + esc(S.brand_first) + ' <span class="text-[#5fd6c4]">' + esc(S.brand_second) + '</span></span></a>' +
     '<nav class="hidden flex-wrap items-center gap-5 text-sm font-medium text-white/80 lg:flex">' +
@@ -61,10 +59,21 @@
     '<a href="' + esc(mail()) + '" class="' + btnP + '">' + esc(S.email) + '</a>' +
     '<a href="' + esc(S.instagram) + '" target="_blank" rel="noreferrer" class="' + btnS + '">Instagram</a>' +
     '<a href="' + esc(S.facebook) + '" target="_blank" rel="noreferrer" class="' + btnS + '">Facebook</a></div></div></section>' +
-    '<footer class="border-t border-white/10 py-6 text-center text-xs text-white/40">&copy; ' + new Date().getFullYear() + ' ' + esc(S.footer) + '</footer>';
+    '<footer class="border-t border-white/10 py-6 text-center text-xs text-white/40">&copy; ' + new Date().getFullYear() + ' ' + esc(S.footer) + '</footer>'
+  );
+}
 
-  if (location.hash) { const t = document.getElementById(location.hash.slice(1)); t && t.scrollIntoView(); }
-})();
+window.buildPage = buildPage;
+
+if (document.getElementById('app')) {
+  Promise.all([
+    fetch('/content/settings.json').then(r => r.json()),
+    fetch('/content/stock.json').then(r => r.json())
+  ]).then(function (d) {
+    document.getElementById('app').innerHTML = buildPage(d[0], d[1]);
+    if (location.hash) { const t = document.getElementById(location.hash.slice(1)); t && t.scrollIntoView(); }
+  });
+}
 
 // If Netlify image resizing isn't available (e.g. local preview), fall back to the original file.
 document.addEventListener('error', function (e) {
