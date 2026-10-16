@@ -125,7 +125,7 @@
           "size": "3-3.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_2964.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Neon Tetra (Paracheirodon inessi)",
@@ -139,7 +139,7 @@
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_1674.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Ember Tetra (Hyphessobrycon amandae)",
@@ -238,7 +238,7 @@
           "size": "1.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_4690.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Blue Neon Rasbora (Sundadanio axelrodi blue)",
@@ -339,14 +339,14 @@
           "size": "4-5 cm",
           "price": "$12",
           "image": "/img/IMG_2756.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Blue Zebra Borneo Hillstream Loach SK3 (Gastromyzon sp)",
           "size": "2.5-3 cm",
           "price": "$15",
           "image": "/img/IMG_2101.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Guentheri Red Killie (Nothobranchius guentheri)",
