@@ -146,6 +146,13 @@
           "price": "$10",
           "image": "/img/cory-sterbai.png",
           "sold_out": false
+        },
+        {
+          "name": "Ceara Bulldog Cory (Aspidoras raimundi)",
+          "size": "2.5-3 cm",
+          "price": "$10",
+          "image": "/img/cory-sterbai.png",
+          "sold_out": false
         }
       ],
       "id": "corydoras"
@@ -407,6 +414,13 @@
           "name": "Betta Plakat Nemo Copper (Betta splendens)",
           "size": "3-5 cm",
           "price": "$40",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Assorted Endlers (Poecilia wingei)",
+          "size": "2.5-3 cm",
+          "price": "$5",
           "image": "/img/IMG_4523.jpeg",
           "sold_out": false
         }
