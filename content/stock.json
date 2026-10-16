@@ -108,15 +108,22 @@
         {
           "name": "Albino Pygmy Cory (Gastrodermus pygmaeus)",
           "size": "2-2.5 cm",
-          "price": "$9",
+          "price": "$12",
           "image": "/img/IMG_4695.jpeg",
           "sold_out": false
         },
         {
           "name": "Julii Cory (Hoisoma julii)",
-          "size": "2.5-3 cm\"",
+          "size": "2.5-3 cm",
           "price": "$10",
           "image": "/img/IMG_2802.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Sterbai Cory (Hoplisoma sterbai)",
+          "size": "2.5-3 cm",
+          "price": "$10",
+          "image": "/img/cory-sterbai.png",
           "sold_out": false
         }
       ],
@@ -193,7 +200,7 @@
         {
           "name": "Black Emperor Tetra (Nematobrycon palmeri)",
           "size": "2.5 cm",
-          "price": "6/$35",
+          "price": "6/$3",
           "image": "/img/IMG_1272.jpeg",
           "sold_out": false
         },
