@@ -7,63 +7,63 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
-          "name": "Clown Pleco (L104)",
+          "name": "Clown Pleco L104 (Panaqolus maccus)",
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_5473.jpeg",
           "sold_out": false
         },
         {
-          "name": "Para Pleco (L124)",
+          "name": "Para Pleco L124 (Peckoltia sabaji)",
           "size": "10-11 cm",
           "price": "$55",
           "image": "/img/IMG_6567.jpeg",
           "sold_out": false
         },
         {
-          "name": "Emperor Pleco (L204)",
+          "name": "Emperor Pleco L204 (Panaqolus albivermis)",
           "size": "6-7 cm",
           "price": "$60",
           "image": "/img/IMG_3693.jpeg",
           "sold_out": false
         },
         {
-          "name": "Dwarf Spiny Pleco (L280)",
+          "name": "Dwarf Spiny Pleco L280 (Hypancistrus vandragti)",
           "size": "2.5-3 cm",
           "price": "$50",
           "image": "/img/IMG_1939.jpeg",
           "sold_out": false
         },
         {
-          "name": "King Tiger B&W Pleco (L333)",
+          "name": "King Tiger B&W Pleco L333 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$50",
           "image": "/img/IMG_7275.jpeg",
           "sold_out": false
         },
         {
-          "name": "Luna Angel Pleco (L339)",
+          "name": "Luna Angel Pleco L339 (Hypancistrus lunaorum)",
           "size": "8 cm",
           "price": "$40",
           "image": "/img/IMG_7157.jpeg",
           "sold_out": false
         },
         {
-          "name": "Mega Clown Pleco (L340)",
+          "name": "Mega Clown Pleco L340 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$40",
           "image": "/img/IMG_7709.jpeg",
           "sold_out": false
         },
         {
-          "name": "Dwarf Snowball Pleco (L471)",
+          "name": "Dwarf Snowball Pleco L471 (Hypancistrus sp)",
           "size": "3-4 cm",
           "price": "$40",
           "image": "/img/3ebf8c51-36aa-4a08-81a8-9ab503853d78.jpeg",
           "sold_out": false
         },
         {
-          "name": "Ancistrus sp Rio Itenez (L519)",
+          "name": "Rio Itenez Bristlenose Pleco L519 (Ancistrus sp)",
           "size": "3-4 cm",
           "price": "$45",
           "image": "/img/7e38c4cf-906e-4994-942c-32703133c1cb.jpeg",
