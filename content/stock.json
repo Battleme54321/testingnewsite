@@ -399,6 +399,34 @@
         }
       ],
       "id": "dry-goods"
+    },
+    {
+      "title": "Dry Goods",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Repashy Soilent Green",
+          "size": "M",
+          "price": "30",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": true
+        },
+        {
+          "name": "Repashy Bottom Scratcher",
+          "size": "M",
+          "price": "$30",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": true
+        },
+        {
+          "name": "Pleco Cave",
+          "size": "M",
+          "price": "$30",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": true
+        }
+      ]
     }
   ]
 }
