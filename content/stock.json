@@ -7,6 +7,13 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
+          "name": "Medusa Pleco L034 (Ancistrus ranunculus)",
+          "size": "6-7 cm",
+          "price": "$50",
+          "image": "/img/IMG_5473.jpeg",
+          "sold_out": false
+        },
+        {
           "name": "Clown Pleco L104 (Panaqolus maccus)",
           "size": "3-3.5 cm",
           "price": "$12",
@@ -17,6 +24,13 @@
           "name": "Para Pleco L124 (Peckoltia sabaji)",
           "size": "10-11 cm",
           "price": "$55",
+          "image": "/img/IMG_6567.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Royal Pleco L190 (Panaque nigrolineatus)",
+          "size": "4-5 cm",
+          "price": "$40",
           "image": "/img/IMG_6567.jpeg",
           "sold_out": false
         },
@@ -87,6 +101,13 @@
           "name": "Chocolate Whiptail (Rhineloricaria Lanceolata)",
           "size": "4-5 cm",
           "price": "$20",
+          "image": "/img/IMG_4699.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Oto Cat (Otocinclus affinis)",
+          "size": "2.5-3 cm",
+          "price": "$6",
           "image": "/img/IMG_4699.jpeg",
           "sold_out": false
         }
