@@ -4,6 +4,7 @@
   "email": "thesixaquatics@gmail.com",
   "instagram": "https://www.instagram.com/thesixaquatics/",
   "facebook": "https://www.facebook.com/people/The-Six-Aquatics/100046358747840/",
+  "logo_image": "/img/logo.png",
   "hero_image": "/img/hero-tank.png",
   "hero_eyebrow": "Toronto, Ontario",
   "hero_title": "Your go-to destination for high quality tropical fish",
@@ -11,7 +12,7 @@
   "info_cards": [
     {
       "title": "Same-day GTA delivery",
-      "text": "Durham, Halton, Peel & York — starting at $15, delivered carefully in insulated, heated bags."
+      "text": "Durham, Halton, Peel & York — starting at $15"
     },
     {
       "title": "Canada-wide shipping",
@@ -21,6 +22,5 @@
   "stock_note": "Sizes are average — actual fish may be slightly bigger or smaller.",
   "contact_title": "Ready to place an order?",
   "contact_text": "Contact us by email at thesixaquatics@gmail.com",
-  "footer": "The Six Aquatics. Toronto, Ontario.",
-  "logo_image": "/img/logo.png"
+  "footer": "The Six Aquatics. Toronto, Ontario."
 }
