@@ -231,6 +231,13 @@
           "price": "$12",
           "image": "/img/IMG_4688.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Blue Lapis Tetra (Hyphessobrycon cyanotaenia)",
+          "size": "2 cm",
+          "price": "$10",
+          "image": "/img/IMG_4703.jpeg",
+          "sold_out": false
         }
       ],
       "id": "tetra"
