@@ -88,43 +88,106 @@
       "id": "corydoras"
     },
     {
-      "title": "Tetra / Nannostomus",
+      "title": "Tetra",
       "nav_label": "Tetra",
       "description": "",
       "items": [
         {
-          "name": "Rummynose Tetra",
-          "size": "1\"",
-          "price": "6/$30",
-          "image": "/img/tetra-rummynose.png",
-          "sold_out": false
-        },
-        {
-          "name": "Ember Tetra",
-          "size": "0.75\"",
+          "name": "Cardinal Tetra (Paracheirodon axelrodi)",
+          "size": "2.5*3 cm",
           "price": "6/$25",
           "image": "/img/tetra-rummynose.png",
           "sold_out": false
         },
         {
-          "name": "Green Neon Tetra",
-          "size": "1\"",
-          "price": "6/$35",
-          "image": "/img/tetra-rummynose.png",
-          "sold_out": false
-        },
-        {
-          "name": "Diamond Tetra",
-          "size": "1.5\"",
-          "price": "6/$40",
+          "name": "Rummynose Tetra (Hemigrammus bleheri)",
+          "size": "3-3.5 cm",
+          "price": "6/$30",
           "image": "/img/tetra-rummynose.png",
           "sold_out": true
         },
         {
-          "name": "Threadfin Rainbow (Nannostomus)",
-          "size": "1\"",
-          "price": "pair/$25",
+          "name": "Neon Tetra (Paracheirodon inessi)",
+          "size": "2-2.5 cm",
+          "price": "6/$25",
           "image": "/img/tetra-rummynose.png",
+          "sold_out": false
+        },
+        {
+          "name": "Green Neon Tetra (Paracheirodon simulans)",
+          "size": "1.5-2 cm",
+          "price": "6/$25",
+          "image": "/img/tetra-rummynose.png",
+          "sold_out": true
+        },
+        {
+          "name": "Ember Tetra (Hyphessobrycon amandae)",
+          "size": "1.5-2 cm",
+          "price": "6/$25",
+          "image": "/img/tetra-rummynose.png",
+          "sold_out": false
+        },
+        {
+          "name": "Diamond Tetra (Moenkhausia pitierri)",
+          "size": "2.5-3 cm",
+          "price": "6/$30",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Kerri Tetra (Inpaichthys kerri)",
+          "size": "2-2.5 cm",
+          "price": "6/$25",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Black Neon Tetra (Hyphessobrycon herbertaxelrodi)",
+          "size": "2.5-3 cm",
+          "price": "6/$25",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Penguin Tetra (Thayeria boehlkei)",
+          "size": "2.5 cm",
+          "price": "6/$25",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": false
+        },
+        {
+          "name": "Black Emperor Tetra (Nematobrycon palmeri)",
+          "size": "2.5 cm",
+          "price": "6/$35",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": false
+        },
+        {
+          "name": "Scratched Inpa Tetra (Inpaichthys parauapiranga)",
+          "size": "3-3.5 cm",
+          "price": "$10",
+          "image": "/img/cory-sterbai.png",
+          "sold_out": false
+        },
+        {
+          "name": "Racoon Tetra (Hyphessobrycon procyon)",
+          "size": "3-3.5 cm",
+          "price": "$12",
+          "image": "/img/cory-sterbai.png",
+          "sold_out": false
+        },
+        {
+          "name": "Black Arrow Tetra (Inpaichthys luizae)",
+          "size": "1.5-2 cm",
+          "price": "$25",
+          "image": "/img/cory-sterbai.png",
+          "sold_out": false
+        },
+        {
+          "name": "Bllueberry Tetra (Hyphessobrycon wadai)",
+          "size": "3-3.5 cm",
+          "price": "$12",
+          "image": "/img/cory-sterbai.png",
           "sold_out": false
         }
       ],
