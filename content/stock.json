@@ -32,28 +32,28 @@
           "size": "8 cm",
           "price": "$40",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Mega Clown Pleco (L340)",
           "size": "6-8 cm",
           "price": "$40",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Ancistrus sp Rio Itenez (L519)",
           "size": "3-4 cm",
           "price": "$45",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Slate Pleco (Pseudancistrus genisetiger)",
           "size": "8 cm",
           "price": "$65",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
+          "sold_out": false
         }
       ],
       "id": "loricariidae"
