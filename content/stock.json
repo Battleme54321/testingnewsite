@@ -257,7 +257,7 @@
         {
           "name": "Galaxy Rasbora (Danio margaritatus)",
           "size": "1.5-2 cm",
-          "price": "6/$40",
+          "price": "$8",
           "image": "/img/IMG_0707.jpeg",
           "sold_out": false
         },
@@ -288,6 +288,13 @@
           "price": "$8",
           "image": "/img/IMG_0708.jpeg",
           "sold_out": true
+        },
+        {
+          "name": "Emerald Dwarf Rasbora (Danio erythromicron)",
+          "size": "2-2.5 cm",
+          "price": "$8",
+          "image": "/img/Screenshot 2026-10-15 at 5.41.02 PM.png",
+          "sold_out": false
         }
       ],
       "id": "rasbora"
@@ -323,7 +330,7 @@
           "size": "2.5 cm",
           "price": "$7",
           "image": "/img/IMG_3161.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Southern Blue Eye Rainbowfish (Pseudomugil signifer)",
