@@ -10,7 +10,7 @@
           "name": "Medusa Pleco L034 (Ancistrus ranunculus)",
           "size": "6-7 cm",
           "price": "$50",
-          "image": "/img/IMG_5473.jpeg",
+          "image": "/img/image2.jpeg",
           "sold_out": false
         },
         {
@@ -31,7 +31,7 @@
           "name": "Royal Pleco L190 (Panaque nigrolineatus)",
           "size": "4-5 cm",
           "price": "$40",
-          "image": "/img/IMG_6567.jpeg",
+          "image": "/img/IMG_6582.jpeg",
           "sold_out": false
         },
         {
@@ -108,7 +108,7 @@
           "name": "Oto Cat (Otocinclus affinis)",
           "size": "2.5-3 cm",
           "price": "$6",
-          "image": "/img/IMG_4699.jpeg",
+          "image": "/img/IMG_0029.jpeg",
           "sold_out": false
         }
       ],
