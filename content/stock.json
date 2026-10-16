@@ -1,14 +1,15 @@
 {
+  "stock_date": "October 15, 2026",
   "categories": [
     {
-      "id": "loricariidae",
       "title": "Loricariidae",
+      "nav_label": "Loricariidae",
       "description": "Plecos and armored catfish.",
       "items": [
         {
           "name": "Green Phantom Pleco (L200)",
           "size": "2.5-3\"",
-          "price": "$65",
+          "price": "$1",
           "image": "/img/pleco-green-phantom.png",
           "sold_out": false
         },
@@ -34,11 +35,11 @@
           "sold_out": true
         }
       ],
-      "nav_label": "Loricariidae"
+      "id": "loricariidae"
     },
     {
-      "id": "corydoras",
       "title": "Corydoras",
+      "nav_label": "Corydoras",
       "description": "",
       "items": [
         {
@@ -70,11 +71,11 @@
           "sold_out": true
         }
       ],
-      "nav_label": "Corydoras"
+      "id": "corydoras"
     },
     {
-      "id": "tetra",
       "title": "Tetra / Nannostomus",
+      "nav_label": "Tetra",
       "description": "",
       "items": [
         {
@@ -113,11 +114,11 @@
           "sold_out": false
         }
       ],
-      "nav_label": "Tetra"
+      "id": "tetra"
     },
     {
-      "id": "rasbora",
       "title": "Rasbora",
+      "nav_label": "Rasbora",
       "description": "",
       "items": [
         {
@@ -142,11 +143,11 @@
           "sold_out": true
         }
       ],
-      "nav_label": "Rasbora"
+      "id": "rasbora"
     },
     {
-      "id": "rainbowfish",
       "title": "Rainbowfish",
+      "nav_label": "Rainbowfish",
       "description": "",
       "items": [
         {
@@ -171,11 +172,11 @@
           "sold_out": true
         }
       ],
-      "nav_label": "Rainbowfish"
+      "id": "rainbowfish"
     },
     {
-      "id": "other",
       "title": "Other",
+      "nav_label": "Other",
       "description": "",
       "items": [
         {
@@ -214,11 +215,11 @@
           "sold_out": false
         }
       ],
-      "nav_label": "Other"
+      "id": "other"
     },
     {
-      "id": "dry-goods",
       "title": "Dry Goods",
+      "nav_label": "Dry Goods",
       "description": "",
       "items": [
         {
@@ -250,8 +251,7 @@
           "sold_out": false
         }
       ],
-      "nav_label": "Dry Goods"
+      "id": "dry-goods"
     }
-  ],
-  "stock_date": "October 15, 2026"
+  ]
 }
