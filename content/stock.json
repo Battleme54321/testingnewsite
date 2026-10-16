@@ -7,17 +7,17 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
-          "name": "Para Pleco (L124)",
-          "size": "10-11 cm",
-          "price": "$55",
-          "image": "/img/IMG_6567.jpeg",
-          "sold_out": false
-        },
-        {
           "name": "Clown Pleco (L104)",
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_5473.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Para Pleco (L124)",
+          "size": "10-11 cm",
+          "price": "$55",
+          "image": "/img/IMG_6567.jpeg",
           "sold_out": false
         },
         {
