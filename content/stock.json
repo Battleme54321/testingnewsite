@@ -11,14 +11,14 @@
           "size": "2.5-3\"",
           "price": "$65",
           "image": "/img/pleco-green-phantom.png",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Gold Nugget Pleco (L018)",
           "size": "2-2.5\"",
           "price": "$85",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Blue Phantom Pleco (L128)",
