@@ -308,6 +308,28 @@
       "id": "other"
     },
     {
+      "title": "Livebearers",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Carolina Platy (Xiphophorus maculatus)",
+          "size": "2.5-3 cm",
+          "price": "$6",
+          "image": "/img/IMG_9417.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Red Wag Cauliflower Sabertail (Xiphophorus helleri)",
+          "size": "5-6 cm",
+          "price": "$60/pair",
+          "image": "/img/IMG_3156.jpeg",
+          "sold_out": false
+        }
+      ],
+      "id": "rainbowfish"
+    },
+    {
       "title": "Pencilfish",
       "nav_label": "",
       "description": "",
@@ -425,13 +447,6 @@
           "size": "2.5-3 cm",
           "price": "6/$25",
           "image": "/img/IMG_4209.jpeg",
-          "sold_out": false
-        },
-        {
-          "name": "Carolina Platy (Xiphophorus maculatus)",
-          "size": "2.5-3 cm",
-          "price": "$6",
-          "image": "/img/IMG_9417.jpeg",
           "sold_out": false
         },
         {
