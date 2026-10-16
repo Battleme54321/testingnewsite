@@ -442,23 +442,23 @@
       "items": [
         {
           "name": "Repashy Soilent Green",
-          "size": "M",
-          "price": "30",
-          "image": "/img/other-kuhli-loach.png",
+          "size": "170g",
+          "price": "$30",
+          "image": "/img/IMG_4700.jpeg",
           "sold_out": true
         },
         {
           "name": "Repashy Bottom Scratcher",
-          "size": "M",
+          "size": "170g",
           "price": "$30",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_4702.jpeg",
           "sold_out": true
         },
         {
           "name": "Pleco Cave",
           "size": "M",
-          "price": "$30",
-          "image": "/img/other-kuhli-loach.png",
+          "price": "$10",
+          "image": "/img/IMG_0459.jpeg",
           "sold_out": true
         }
       ]
