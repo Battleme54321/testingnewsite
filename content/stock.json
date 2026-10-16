@@ -2,8 +2,8 @@
   "stock_date": "October 16, 2026",
   "categories": [
     {
-      "title": "Plecos",
-      "nav_label": "Loricariidae",
+      "title": "Loricariidae",
+      "nav_label": "",
       "description": "Plecos and armored catfish.",
       "items": [
         {
@@ -74,6 +74,20 @@
           "size": "8 cm",
           "price": "$65",
           "image": "/img/AA2EE9AB-4133-4418-A00A-A24248E90B3A.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Rel Lizard L010A (Rhineloricaria sp)",
+          "size": "3-4 cm",
+          "price": "$25",
+          "image": "/img/IMG_2102.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Chocolate Whiptail (Rhineloricaria Lanceolata)",
+          "size": "4-5 cm",
+          "price": "$20",
+          "image": "/img/IMG_4699.jpeg",
           "sold_out": false
         }
       ],
@@ -485,17 +499,10 @@
           "sold_out": false
         },
         {
-          "name": "Chocolate Whiptail (Rhineloricaria Lanceolata)",
-          "size": "4-5 cm",
-          "price": "$20",
-          "image": "/img/IMG_4699.jpeg",
-          "sold_out": false
-        },
-        {
-          "name": "Rel Lizard L010A (Rhineloricaria sp)",
-          "size": "3-4 cm",
-          "price": "$25",
-          "image": "/img/IMG_2102.jpeg",
+          "name": "Panda Garra (Garra flavatra)",
+          "size": "2.5-3 cm",
+          "price": "$12",
+          "image": "/img/IMG_1279.jpeg",
           "sold_out": false
         }
       ],
