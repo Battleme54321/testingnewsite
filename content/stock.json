@@ -64,32 +64,25 @@
       "description": "",
       "items": [
         {
-          "name": "Sterbai Cory",
-          "size": "1-1.25\"",
-          "price": "6/$50",
+          "name": "Emerald Green Cory (Brochis splendens)",
+          "size": "5-6 cm",
+          "price": "$20",
           "image": "/img/cory-sterbai.png",
           "sold_out": false
         },
         {
-          "name": "Panda Cory",
-          "size": "1\"",
-          "price": "6/$40",
+          "name": "Albino Pygmy Cory",
+          "size": "2-2.5 cm",
+          "price": "$9",
           "image": "/img/cory-panda.png",
           "sold_out": false
         },
         {
           "name": "Julii Cory",
-          "size": "1-1.25\"",
-          "price": "6/$45",
+          "size": "2.5-3 cm\"",
+          "price": "$10",
           "image": "/img/cory-sterbai.png",
           "sold_out": false
-        },
-        {
-          "name": "Melini Cory",
-          "size": "1\"",
-          "price": "6/$55",
-          "image": "/img/cory-panda.png",
-          "sold_out": true
         }
       ],
       "id": "corydoras"
