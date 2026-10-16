@@ -199,22 +199,22 @@
       "description": "",
       "items": [
         {
-          "name": "Harlequin Rasbora",
-          "size": "1\"",
+          "name": "Harlequin Rasbora (Trigonostigma heteromorpha)",
+          "size": "2.5-3 cm",
           "price": "6/$30",
           "image": "/img/rasbora-harlequin.png",
           "sold_out": false
         },
         {
-          "name": "Chili Rasbora",
-          "size": "0.5\"",
-          "price": "6/$35",
+          "name": "Galaxy Rasbora (Danio margaritatus)",
+          "size": "1.5-2 cm",
+          "price": "6/$40",
           "image": "/img/rasbora-harlequin.png",
           "sold_out": false
         },
         {
-          "name": "Lambchop Rasbora",
-          "size": "1\"",
+          "name": "Strawberry Rasbora (Boraras naevus)",
+          "size": "1.5 cm",
           "price": "6/$30",
           "image": "/img/rasbora-harlequin.png",
           "sold_out": true
