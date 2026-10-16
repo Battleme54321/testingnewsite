@@ -1,9 +1,8 @@
 {
-  "stock_date": "October 15, 2026",
   "categories": [
     {
+      "id": "loricariidae",
       "title": "Loricariidae",
-      "nav_label": "Loricariidae",
       "description": "Plecos and armored catfish.",
       "items": [
         {
@@ -11,14 +10,14 @@
           "size": "2.5-3\"",
           "price": "$65",
           "image": "/img/pleco-green-phantom.png",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Gold Nugget Pleco (L018)",
           "size": "2-2.5\"",
           "price": "$85",
           "image": "/img/pleco-gold-nugget.png",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Blue Phantom Pleco (L128)",
@@ -35,11 +34,11 @@
           "sold_out": true
         }
       ],
-      "id": "loricariidae"
+      "nav_label": "Loricariidae"
     },
     {
+      "id": "corydoras",
       "title": "Corydoras",
-      "nav_label": "Corydoras",
       "description": "",
       "items": [
         {
@@ -53,7 +52,7 @@
           "name": "Panda Cory",
           "size": "1\"",
           "price": "6/$40",
-          "image": "/img/Screenshot 2026-10-15 at 5.41.02 PM.png",
+          "image": "/img/cory-panda.png",
           "sold_out": false
         },
         {
@@ -71,11 +70,11 @@
           "sold_out": true
         }
       ],
-      "id": "corydoras"
+      "nav_label": "Corydoras"
     },
     {
+      "id": "tetra",
       "title": "Tetra / Nannostomus",
-      "nav_label": "Tetra",
       "description": "",
       "items": [
         {
@@ -114,11 +113,11 @@
           "sold_out": false
         }
       ],
-      "id": "tetra"
+      "nav_label": "Tetra"
     },
     {
+      "id": "rasbora",
       "title": "Rasbora",
-      "nav_label": "Rasbora",
       "description": "",
       "items": [
         {
@@ -143,11 +142,11 @@
           "sold_out": true
         }
       ],
-      "id": "rasbora"
+      "nav_label": "Rasbora"
     },
     {
+      "id": "rainbowfish",
       "title": "Rainbowfish",
-      "nav_label": "Rainbowfish",
       "description": "",
       "items": [
         {
@@ -172,11 +171,11 @@
           "sold_out": true
         }
       ],
-      "id": "rainbowfish"
+      "nav_label": "Rainbowfish"
     },
     {
+      "id": "other",
       "title": "Other",
-      "nav_label": "Other",
       "description": "",
       "items": [
         {
@@ -215,11 +214,11 @@
           "sold_out": false
         }
       ],
-      "id": "other"
+      "nav_label": "Other"
     },
     {
+      "id": "dry-goods",
       "title": "Dry Goods",
-      "nav_label": "Dry Goods",
       "description": "",
       "items": [
         {
@@ -251,7 +250,8 @@
           "sold_out": false
         }
       ],
-      "id": "dry-goods"
+      "nav_label": "Dry Goods"
     }
-  ]
+  ],
+  "stock_date": "October 15, 2026"
 }
