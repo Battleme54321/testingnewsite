@@ -252,42 +252,42 @@
           "name": "Forktail Rainbowfish (Pseudomugil furcatus)",
           "size": "2-2.5 cm",
           "price": "$10",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_2112.jpeg",
           "sold_out": false
         },
         {
           "name": "Red Neon Rainbowfish (Pseudomugil luminatus)",
           "size": "2.5-3 cm",
           "price": "$12",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_0709.jpeg",
           "sold_out": false
         },
         {
           "name": "Threadfin Rainbowfish Males (Iriatherina werneri)",
           "size": "2-3 cm",
           "price": "$7",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_3160.jpeg",
           "sold_out": false
         },
         {
           "name": "Gertrudes Blue Eye Rainbowfish (Pseudomugil gertrudae)",
           "size": "2.5 cm",
           "price": "$7",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_3161.jpeg",
           "sold_out": true
         },
         {
           "name": "Southern Blue Eye Rainbowfish (Pseudomugil signifer)",
           "size": "2.5 cm",
           "price": "$7",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_4689.jpeg",
           "sold_out": false
         },
         {
-          "name": "Neon Dwarf Rainbowfish",
+          "name": "Neon Dwarf Rainbowfish (Melanotaenia praecox)",
           "size": "2.5-3 cm",
           "price": "$8",
-          "image": "/img/other-kuhli-loach.png",
+          "image": "/img/IMG_4207.jpeg",
           "sold_out": false
         }
       ],
@@ -302,14 +302,14 @@
           "name": "Super Red Cenepa Pencilfish (Nannostomus sp)",
           "size": "2.5 cm",
           "price": "$75",
-          "image": "/img/rainbow-dwarf-neon.png",
+          "image": "/img/IMG_3572.jpeg",
           "sold_out": false
         },
         {
           "name": "Red Shining Pencilfish (Nannostomus nitidus)",
           "size": "3 cm",
           "price": "6/$30",
-          "image": "/img/rainbow-dwarf-neon.png",
+          "image": "/img/IMG_2114.jpeg",
           "sold_out": false
         }
       ],
