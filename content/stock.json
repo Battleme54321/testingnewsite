@@ -296,35 +296,105 @@
     },
     {
       "title": "Other",
-      "nav_label": "Dry Goods",
+      "nav_label": "",
       "description": "",
       "items": [
         {
-          "name": "Repashy Super Green Gel Food",
-          "size": "3 oz",
-          "price": "$18",
+          "name": "Yoyo Loach (Botia lohachata)",
+          "size": "2.5-3 cm",
+          "price": "$10",
           "image": "/img/dry-goods-flatlay.png",
           "sold_out": false
         },
         {
-          "name": "Repashy Soilent Green",
-          "size": "3 oz",
-          "price": "$18",
-          "image": "/img/dry-goods-flatlay.png",
-          "sold_out": true
-        },
-        {
-          "name": "Ceramic Pleco Cave",
-          "size": "Medium",
+          "name": "Clown Loach (Chromobotia macracanthus))",
+          "size": "4-5 cm",
           "price": "$12",
           "image": "/img/dry-goods-flatlay.png",
           "sold_out": true
         },
         {
-          "name": "Indian Almond Leaves",
-          "size": "Bundle of 10",
-          "price": "$8",
+          "name": "Blue Zebra Borneo Hillstream Loach SK3 (Gastromyzon sp)",
+          "size": "2.5-3 cm",
+          "price": "$15",
           "image": "/img/dry-goods-flatlay.png",
+          "sold_out": true
+        },
+        {
+          "name": "Guentheri Red Killie (Nothobranchius guentheri)",
+          "size": "3-4 cm",
+          "price": "$20",
+          "image": "/img/dry-goods-flatlay.png",
+          "sold_out": false
+        },
+        {
+          "name": "Golden White Cloud Mountain Minnow (Tanichthys albonubes)",
+          "size": "2.5-3 cm",
+          "price": "6/$25",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Carolina Platy (Xiphophorus maculatus)",
+          "size": "2.5-3 cm",
+          "price": "$6",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Asian Rummynose Males (Sawbwa resplendens)",
+          "size": "3-3.5 cm",
+          "price": "$9",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Cherry Barb (Puntius titteya)",
+          "size": "2-2.5 cm",
+          "price": "6/$25",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Chocolate Whiptail (Rhineloricaria Lanceolata)",
+          "size": "4-5 cm",
+          "price": "$20",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Rel Lizard L010A (Rhineloricaria sp)",
+          "size": "3-4 cm",
+          "price": "$25",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Red Wag Cauliflower Sabertail (Xiphophorus helleri)",
+          "size": "5-6 cm",
+          "price": "$60/pair",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Red Hamburg Cauliflower Swordtail (Xiphophorus helleri)",
+          "size": "5-6 cm",
+          "price": "$60/pair",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Albino Bloodred Cauliflower Sabertail (Xiphophorus helleri)",
+          "size": "6-7 cm",
+          "price": "$45/pair",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Betta Plakat Nemo Copper (Betta splendens)",
+          "size": "3-5 cm",
+          "price": "$40",
+          "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         }
       ],
