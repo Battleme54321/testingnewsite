@@ -246,6 +246,13 @@
           "price": "$8",
           "image": "/img/IMG_9700.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Phoenix Rasbora (Boraras merah)",
+          "size": "1.5-2 cm",
+          "price": "6/$30",
+          "image": "/img/IMG_4698.jpeg",
+          "sold_out": false
         }
       ],
       "id": "rasbora"
