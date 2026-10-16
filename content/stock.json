@@ -239,6 +239,13 @@
           "price": "6/$30",
           "image": "/img/IMG_4690.jpeg",
           "sold_out": true
+        },
+        {
+          "name": "Blue Neon Rasbora (Sundadanio axelrodi blue)",
+          "size": "1.5-2 cm",
+          "price": "$8",
+          "image": "/img/IMG_9700.jpeg",
+          "sold_out": false
         }
       ],
       "id": "rasbora"
