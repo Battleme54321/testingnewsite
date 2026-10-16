@@ -17,42 +17,49 @@
           "name": "Dwarf Spiny Pleco (L280)",
           "size": "2.5-3 cm",
           "price": "$50",
-          "image": "/img/pleco-gold-nugget.png",
+          "image": "/img/IMG_1939.jpeg",
           "sold_out": false
         },
         {
           "name": "King Tiger B&W Pleco (L333)",
           "size": "6-8 cm",
           "price": "$50",
-          "image": "/img/pleco-green-phantom.png",
+          "image": "/img/IMG_7275.jpeg",
           "sold_out": false
         },
         {
           "name": "Luna Angel Pleco (L339)",
           "size": "8 cm",
           "price": "$40",
-          "image": "/img/pleco-gold-nugget.png",
+          "image": "/img/IMG_7157.jpeg",
           "sold_out": false
         },
         {
           "name": "Mega Clown Pleco (L340)",
           "size": "6-8 cm",
           "price": "$40",
-          "image": "/img/pleco-gold-nugget.png",
+          "image": "/img/IMG_7709.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Dwarf Snowball Pleco (L471)",
+          "size": "3-4 cm",
+          "price": "$40",
+          "image": "/img/3ebf8c51-36aa-4a08-81a8-9ab503853d78.jpeg",
           "sold_out": false
         },
         {
           "name": "Ancistrus sp Rio Itenez (L519)",
           "size": "3-4 cm",
           "price": "$45",
-          "image": "/img/pleco-gold-nugget.png",
+          "image": "/img/7e38c4cf-906e-4994-942c-32703133c1cb.jpeg",
           "sold_out": false
         },
         {
           "name": "Slate Pleco (Pseudancistrus genisetiger)",
           "size": "8 cm",
           "price": "$65",
-          "image": "/img/pleco-gold-nugget.png",
+          "image": "/img/AA2EE9AB-4133-4418-A00A-A24248E90B3A.jpeg",
           "sold_out": false
         }
       ],
@@ -67,21 +74,21 @@
           "name": "Emerald Green Cory (Brochis splendens)",
           "size": "5-6 cm",
           "price": "$20",
-          "image": "/img/cory-sterbai.png",
+          "image": "/img/372c1130-0c7d-4275-8f23-71d4b59ea418.jpeg",
           "sold_out": false
         },
         {
           "name": "Albino Pygmy Cory",
           "size": "2-2.5 cm",
           "price": "$9",
-          "image": "/img/cory-panda.png",
+          "image": "/img/IMG_1672.jpeg",
           "sold_out": false
         },
         {
           "name": "Julii Cory",
           "size": "2.5-3 cm\"",
           "price": "$10",
-          "image": "/img/cory-sterbai.png",
+          "image": "/img/IMG_0705.jpeg",
           "sold_out": false
         }
       ],
