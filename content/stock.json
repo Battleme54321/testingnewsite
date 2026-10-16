@@ -21,6 +21,13 @@
           "sold_out": false
         },
         {
+          "name": "Emperor Pleco (L204)",
+          "size": "6-7 cm",
+          "price": "$60",
+          "image": "/img/IMG_3693.jpeg",
+          "sold_out": false
+        },
+        {
           "name": "Dwarf Spiny Pleco (L280)",
           "size": "2.5-3 cm",
           "price": "$50",
