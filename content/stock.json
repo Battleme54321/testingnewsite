@@ -7,30 +7,51 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
-          "name": "L124 Para",
+          "name": "Para Pleco (L124)",
           "size": "10-11 cm",
           "price": "$55",
           "image": "/img/pleco-green-phantom.png",
           "sold_out": false
         },
         {
-          "name": "L280 Dwarf Spiny",
+          "name": "Dwarf Spiny Pleco (L280)",
           "size": "2.5-3 cm",
           "price": "$50",
           "image": "/img/pleco-gold-nugget.png",
           "sold_out": false
         },
         {
-          "name": "Blue Phantom Pleco (L128)",
-          "size": "2.5-3\"",
-          "price": "$60",
+          "name": "King Tiger B&W Pleco (L333)",
+          "size": "6-8 cm",
+          "price": "$50",
           "image": "/img/pleco-green-phantom.png",
           "sold_out": false
         },
         {
-          "name": "Albino Bristlenose Pleco",
-          "size": "1.5-2\"",
-          "price": "2/$30",
+          "name": "Luna Angel Pleco (L339)",
+          "size": "8 cm",
+          "price": "$40",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": true
+        },
+        {
+          "name": "Mega Clown Pleco (L340)",
+          "size": "6-8 cm",
+          "price": "$40",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": true
+        },
+        {
+          "name": "Ancistrus sp Rio Itenez (L519)",
+          "size": "3-4 cm",
+          "price": "$45",
+          "image": "/img/pleco-gold-nugget.png",
+          "sold_out": true
+        },
+        {
+          "name": "Slate Pleco (Pseudancistrus genisetiger)",
+          "size": "8 cm",
+          "price": "$65",
           "image": "/img/pleco-gold-nugget.png",
           "sold_out": true
         }
