@@ -330,6 +330,28 @@
       "id": "rainbowfish"
     },
     {
+      "title": "Killifish",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Guentheri Red Killie (Nothobranchius guentheri)",
+          "size": "3-4 cm",
+          "price": "$20",
+          "image": "/img/IMG_4691.jpeg",
+          "sold_out": false
+        },
+        {
+          "name": "Clown Killifish (Epiplatys annulatus)",
+          "size": "3 cm",
+          "price": "$8",
+          "image": "/img/IMG_2761.jpeg",
+          "sold_out": false
+        }
+      ],
+      "id": "rainbowfish"
+    },
+    {
       "title": "Other",
       "nav_label": "",
       "description": "",
@@ -353,13 +375,6 @@
           "size": "2.5-3 cm",
           "price": "$15",
           "image": "/img/IMG_2101.jpeg",
-          "sold_out": false
-        },
-        {
-          "name": "Guentheri Red Killie (Nothobranchius guentheri)",
-          "size": "3-4 cm",
-          "price": "$20",
-          "image": "/img/IMG_4691.jpeg",
           "sold_out": false
         },
         {
