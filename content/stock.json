@@ -224,70 +224,48 @@
     },
     {
       "title": "Rainbowfish",
-      "nav_label": "Rainbowfish",
+      "nav_label": "",
       "description": "",
       "items": [
         {
-          "name": "Dwarf Neon Rainbow",
-          "size": "1.5\"",
-          "price": "pair/$30",
-          "image": "/img/rainbow-dwarf-neon.png",
-          "sold_out": false
-        },
-        {
-          "name": "Turquoise Rainbow",
-          "size": "2\"",
-          "price": "pair/$40",
-          "image": "/img/rainbow-dwarf-neon.png",
-          "sold_out": false
-        },
-        {
-          "name": "Sahul Rainbow",
-          "size": "2-2.5\"",
-          "price": "pair/$45",
-          "image": "/img/rainbow-dwarf-neon.png",
-          "sold_out": true
-        }
-      ],
-      "id": "rainbowfish"
-    },
-    {
-      "title": "Other",
-      "nav_label": "Other",
-      "description": "",
-      "items": [
-        {
-          "name": "Kuhli Loach",
-          "size": "2-2.5\"",
-          "price": "4/$25",
+          "name": "Forktail Rainbowfish (Pseudomugil furcatus)",
+          "size": "2-2.5 cm",
+          "price": "$10",
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         },
         {
-          "name": "Assassin Snail",
-          "size": "0.75\"",
-          "price": "5/$20",
+          "name": "Red Neon Rainbowfish (Pseudomugil luminatus)",
+          "size": "2.5-3 cm",
+          "price": "$12",
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         },
         {
-          "name": "Amano Shrimp",
-          "size": "1.5\"",
-          "price": "5/$25",
+          "name": "Threadfin Rainbowfish Males (Iriatherina werneri)",
+          "size": "2-3 cm",
+          "price": "$7",
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         },
         {
-          "name": "Golden Wonder Killifish",
-          "size": "2\"",
-          "price": "pair/$20",
+          "name": "Gertrudes Blue Eye Rainbowfish (Pseudomugil gertrudae)",
+          "size": "2.5 cm",
+          "price": "$7",
           "image": "/img/other-kuhli-loach.png",
           "sold_out": true
         },
         {
-          "name": "Bumblebee Goby",
-          "size": "0.75\"",
-          "price": "4/$20",
+          "name": "Southern Blue Eye Rainbowfish (Pseudomugil signifer)",
+          "size": "2.5 cm",
+          "price": "$7",
+          "image": "/img/other-kuhli-loach.png",
+          "sold_out": false
+        },
+        {
+          "name": "Neon Dwarf Rainbowfish",
+          "size": "2.5-3 cm",
+          "price": "$8",
           "image": "/img/other-kuhli-loach.png",
           "sold_out": false
         }
@@ -295,7 +273,29 @@
       "id": "other"
     },
     {
-      "title": "Dry Goods",
+      "title": "Pencilfish",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Super Red Cenepa Pencilfish (Nannostomus sp)",
+          "size": "2.5 cm",
+          "price": "$75",
+          "image": "/img/rainbow-dwarf-neon.png",
+          "sold_out": false
+        },
+        {
+          "name": "Red Shining Pencilfish (Nannostomus nitidus)",
+          "size": "3 cm",
+          "price": "6/$30",
+          "image": "/img/rainbow-dwarf-neon.png",
+          "sold_out": false
+        }
+      ],
+      "id": "rainbowfish"
+    },
+    {
+      "title": "Other",
       "nav_label": "Dry Goods",
       "description": "",
       "items": [
