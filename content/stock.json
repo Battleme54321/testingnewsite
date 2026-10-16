@@ -7,16 +7,16 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
-          "name": "Green Phantom Pleco (L200)",
-          "size": "2.5-3\"",
-          "price": "$1",
+          "name": "L124 Para",
+          "size": "10-11 cm",
+          "price": "$55",
           "image": "/img/pleco-green-phantom.png",
           "sold_out": false
         },
         {
-          "name": "Gold Nugget Pleco (L018)",
-          "size": "2-2.5\"",
-          "price": "$85",
+          "name": "L280 Dwarf Spiny",
+          "size": "2.5-3 cm",
+          "price": "$50",
           "image": "/img/pleco-gold-nugget.png",
           "sold_out": false
         },
