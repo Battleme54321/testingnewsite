@@ -323,6 +323,13 @@
           "price": "$8",
           "image": "/img/IMG_0706.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Asian Rummynose Rasbora Males (Sawbwa resplendens)",
+          "size": "3-3.5 cm",
+          "price": "$9",
+          "image": "/img/IMG_3084.jpeg",
+          "sold_out": false
         }
       ],
       "id": "rasbora"
@@ -545,13 +552,6 @@
           "size": "2.5-3 cm",
           "price": "6/$25",
           "image": "/img/IMG_4209.jpeg",
-          "sold_out": false
-        },
-        {
-          "name": "Asian Rummynose Males (Sawbwa resplendens)",
-          "size": "3-3.5 cm",
-          "price": "$9",
-          "image": "/img/IMG_3084.jpeg",
           "sold_out": false
         },
         {
