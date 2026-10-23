@@ -167,14 +167,14 @@
           "size": "2.5*3 cm",
           "price": "6/$25",
           "image": "/img/IMG_1673.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Rummynose Tetra (Hemigrammus bleheri)",
           "size": "3-3.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_2964.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Neon Tetra (Paracheirodon inessi)",
