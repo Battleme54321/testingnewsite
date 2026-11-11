@@ -456,11 +456,11 @@
           "size": "2-2.5 cm",
           "price": "$8",
           "image": "/img/IMG_2112.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Red Neon Rainbowfish (Pseudomugil luminatus)",
-          "size": "2.5-3 cm",
+          "size": "2-2.5 cm",
           "price": "$12",
           "image": "/img/IMG_0709.jpeg",
           "sold_out": false
@@ -484,7 +484,7 @@
           "size": "2.5 cm",
           "price": "$7",
           "image": "/img/IMG_4689.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Neon Dwarf Rainbowfish (Melanotaenia praecox)",
@@ -530,11 +530,53 @@
           "sold_out": false
         },
         {
-          "name": "Betta Plakat Nemo Copper (Betta splendens)",
+          "name": "Betta Plakat Nemo Copper (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$40",
           "image": "/img/IMG_4523.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Betta Halfmoon Avatar (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$50",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Betta Plakat Avatar (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$50",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Betta Plakat Yellow Hellboy (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$50",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Betta Plakat Red Hellboy (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$50",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Betta Plakat Red Dragon (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$50",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Betta Plakat Candy (Betta splendens var)",
+          "size": "3-5 cm",
+          "price": "$40",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
         },
         {
           "name": "Assorted Endlers (Poecilia wingei)",
