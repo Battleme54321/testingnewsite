@@ -1,5 +1,5 @@
 {
-  "stock_date": "October 16, 2026",
+  "stock_date": "November 11, 2026",
   "categories": [
     {
       "title": "Loricariidae",
@@ -618,28 +618,6 @@
       "id": "rainbowfish"
     },
     {
-      "title": "Pencilfish",
-      "nav_label": "",
-      "description": "",
-      "items": [
-        {
-          "name": "Super Red Cenepa Pencilfish (Nannostomus sp)",
-          "size": "2.5 cm",
-          "price": "$75",
-          "image": "/img/IMG_4704.jpeg",
-          "sold_out": false
-        },
-        {
-          "name": "Red Shining Pencilfish (Nannostomus nitidus)",
-          "size": "3 cm",
-          "price": "6/$30",
-          "image": "/img/IMG_2114.jpeg",
-          "sold_out": false
-        }
-      ],
-      "id": "rainbowfish"
-    },
-    {
       "title": "Killifish",
       "nav_label": "",
       "description": "",
@@ -662,36 +640,22 @@
       "id": "rainbowfish"
     },
     {
-      "title": "Invertebrates",
+      "title": "Pencilfish",
       "nav_label": "",
       "description": "",
       "items": [
         {
-          "name": "Bloody Mary Shrimp (Neocaridina davidi)",
-          "size": "1.5-2 cm",
-          "price": "6/$25",
-          "image": "/img/IMG_4095.jpeg",
-          "sold_out": true
+          "name": "Super Red Cenepa Pencilfish (Nannostomus sp)",
+          "size": "2.5 cm",
+          "price": "$75",
+          "image": "/img/IMG_4704.jpeg",
+          "sold_out": false
         },
         {
-          "name": "Blue Dream Shrimp (Neocaridina davidi)",
-          "size": "1.5-2 cm",
-          "price": "6/$25",
-          "image": "/img/IMG_4094.jpeg",
-          "sold_out": true
-        },
-        {
-          "name": "Orange Pumpkin Shrimp (Neocaridina davidi)",
-          "size": "1.5-2 cm",
-          "price": "6/$25",
-          "image": "/img/IMG_4094.jpeg",
-          "sold_out": true
-        },
-        {
-          "name": "Assassin Snail (Anentome helena)",
-          "size": "1.5 cm",
-          "price": "$5",
-          "image": "/img/IMG_2124.jpeg",
+          "name": "Red Shining Pencilfish (Nannostomus nitidus)",
+          "size": "3 cm",
+          "price": "6/$30",
+          "image": "/img/IMG_2114.jpeg",
           "sold_out": false
         }
       ],
@@ -753,6 +717,42 @@
         }
       ],
       "id": "dry-goods"
+    },
+    {
+      "title": "Invertebrates",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Bloody Mary Shrimp (Neocaridina davidi)",
+          "size": "1.5-2 cm",
+          "price": "6/$25",
+          "image": "/img/IMG_4095.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Blue Dream Shrimp (Neocaridina davidi)",
+          "size": "1.5-2 cm",
+          "price": "6/$25",
+          "image": "/img/IMG_4094.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Orange Pumpkin Shrimp (Neocaridina davidi)",
+          "size": "1.5-2 cm",
+          "price": "6/$25",
+          "image": "/img/IMG_4094.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Assassin Snail (Anentome helena)",
+          "size": "1.5 cm",
+          "price": "$5",
+          "image": "/img/IMG_2124.jpeg",
+          "sold_out": false
+        }
+      ],
+      "id": "rainbowfish"
     },
     {
       "title": "Dry Goods",
