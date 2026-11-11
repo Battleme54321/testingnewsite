@@ -662,7 +662,7 @@
       "id": "rainbowfish"
     },
     {
-      "title": "Other",
+      "title": "Loaches",
       "nav_label": "",
       "description": "",
       "items": [
@@ -695,6 +695,42 @@
           "sold_out": false
         },
         {
+          "name": "Spotted Hillstream Loach (Gastromyzon punctulatus)",
+          "size": "2.5-3 cm",
+          "price": "$15",
+          "image": "/img/IMG_2099.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Striped Hillstream Loach (Gastromyzon zebrinus)",
+          "size": "2.5-3 cm",
+          "price": "$15",
+          "image": "/img/IMG_2099.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Panda Garra (Garra flavatra)",
+          "size": "2 cm",
+          "price": "$12",
+          "image": "/img/IMG_1279.jpeg",
+          "sold_out": false
+        }
+      ],
+      "id": "dry-goods"
+    },
+    {
+      "title": "Other",
+      "nav_label": "",
+      "description": "",
+      "items": [
+        {
+          "name": "Black-Finned Celebes Halfbeak (Nomorhamphus liemi)",
+          "size": "3.5-4 cm",
+          "price": "$20",
+          "image": "/img/IMG_4209.jpeg",
+          "sold_out": true
+        },
+        {
           "name": "Golden White Cloud Mountain Minnow (Tanichthys albonubes)",
           "size": "2.5-3 cm",
           "price": "6/$25",
@@ -707,13 +743,6 @@
           "price": "6/$25",
           "image": "/img/IMG_1883.jpeg",
           "sold_out": true
-        },
-        {
-          "name": "Panda Garra (Garra flavatra)",
-          "size": "2 cm",
-          "price": "$12",
-          "image": "/img/IMG_1279.jpeg",
-          "sold_out": false
         }
       ],
       "id": "dry-goods"
