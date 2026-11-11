@@ -201,21 +201,42 @@
           "size": "5-6 cm",
           "price": "$20",
           "image": "/img/372c1130-0c7d-4275-8f23-71d4b59ea418.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Pygmy Cory (Gastrodermus pygmaeus)",
+          "size": "1.5-2 cm",
+          "price": "$8",
+          "image": "/img/IMG_4695.jpeg",
           "sold_out": false
         },
         {
-          "name": "Albino Pygmy Cory (Gastrodermus pygmaeus)",
-          "size": "2-2.5 cm",
+          "name": "Albino Pygmy Cory (Gastrodermus pygmaeus var)",
+          "size": "1.5-2 cm",
           "price": "$12",
           "image": "/img/IMG_4695.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Panda Cory (Hoplisoma panda)",
+          "size": "2-2.5 cm",
+          "price": "$10",
+          "image": "/img/IMG_2802.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Golden Panda Cory (Hoplisoma panda var)",
+          "size": "2.5-3 cm",
+          "price": "$15",
+          "image": "/img/IMG_2802.jpeg",
+          "sold_out": true
         },
         {
           "name": "Julii Cory (Hoplisoma julii)",
           "size": "2.5-3 cm",
           "price": "$10",
           "image": "/img/IMG_2802.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Sterbai Cory (Hoplisoma sterbai)",
@@ -225,9 +246,16 @@
           "sold_out": false
         },
         {
+          "name": "CW28 Super Schwartzi Cory (Hoplisoma sp)",
+          "size": "3-4 cm",
+          "price": "$40",
+          "image": "/img/cory-sterbai.png",
+          "sold_out": true
+        },
+        {
           "name": "Ceara Bulldog Cory (Aspidoras raimundi)",
-          "size": "2.5-3 cm",
-          "price": "$10",
+          "size": "2-3 cm",
+          "price": "$12",
           "image": "/img/IMG_4706.jpeg",
           "sold_out": false
         }
@@ -258,7 +286,7 @@
           "size": "2-2.5 cm",
           "price": "6/$25",
           "image": "/img/IMG_2966.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Green Neon Tetra (Paracheirodon simulans)",
@@ -293,7 +321,7 @@
           "size": "2.5-3 cm",
           "price": "6/$25",
           "image": "/img/IMG_1280.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Penguin Tetra (Thayeria boehlkei)",
@@ -321,7 +349,7 @@
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_2784.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Black Arrow Tetra (Inpaichthys luizae)",
@@ -329,6 +357,13 @@
           "price": "$25",
           "image": "/img/IMG_4687.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Peugot Tetra (Hyphessobrycon peugeoti)",
+          "size": "2-2.5 cm",
+          "price": "$35",
+          "image": "/img/IMG_4687.jpeg",
+          "sold_out": true
         },
         {
           "name": "Bllueberry Tetra (Hyphessobrycon wadai)",
