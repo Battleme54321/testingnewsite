@@ -208,7 +208,7 @@
           "size": "1.5-2 cm",
           "price": "$8",
           "image": "/img/IMG_4695.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Albino Pygmy Cory (Gastrodermus pygmaeus var)",
