@@ -7,8 +7,36 @@
       "description": "Plecos and armored catfish.",
       "items": [
         {
+          "name": "Galaxy Pleco L034 (Leporacanthicus galaxias)",
+          "size": "6-8 cm",
+          "price": "$55",
+          "image": "/img/image2.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Sunshine Pleco L014 (Scobinancistrus aureatus)",
+          "size": "8-10 cm",
+          "price": "$100",
+          "image": "/img/image2.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Gold Nugget Pleco L018 (Baryancistrus xanthellus)",
+          "size": "6-8 cm",
+          "price": "$50",
+          "image": "/img/image2.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Xingu Royal Pleco L027B (Panaque armbrusteri)",
+          "size": "14-16 cm",
+          "price": "$185",
+          "image": "/img/image2.jpeg",
+          "sold_out": true
+        },
+        {
           "name": "Medusa Pleco L034 (Ancistrus ranunculus)",
-          "size": "6-7 cm",
+          "size": "8-10 cm",
           "price": "$50",
           "image": "/img/image2.jpeg",
           "sold_out": false
