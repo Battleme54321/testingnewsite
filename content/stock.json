@@ -545,6 +545,20 @@
       "description": "",
       "items": [
         {
+          "name": "Chocolate Gourami (Sphaerichthys osphromenoides) WC",
+          "size": "2.5-3 cm",
+          "price": "$12",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
+          "name": "Licorice Gourami (Parosphromenus deissneri)",
+          "size": "2-2.5 cm",
+          "price": "$18",
+          "image": "/img/IMG_4523.jpeg",
+          "sold_out": true
+        },
+        {
           "name": "Betta Plakat Nemo Copper (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$40",
