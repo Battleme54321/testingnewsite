@@ -105,6 +105,13 @@
           "sold_out": true
         },
         {
+          "name": "Titanic Pleco L273 (Leporacanthicus joselimai)",
+          "size": "14-16 cm",
+          "price": "$250",
+          "image": "/img/IMG_3693.jpeg",
+          "sold_out": true
+        },
+        {
           "name": "Dwarf Spiny Pleco L280 (Hypancistrus vandragti)",
           "size": "2.5-3 cm",
           "price": "$50",
@@ -145,6 +152,13 @@
           "price": "$45",
           "image": "/img/7e38c4cf-906e-4994-942c-32703133c1cb.jpeg",
           "sold_out": false
+        },
+        {
+          "name": "Golden Sailfin Luteus Pleco Phase III (Hypostomus luteus)",
+          "size": "28-33 cm",
+          "price": "$1,400",
+          "image": "/img/AA2EE9AB-4133-4418-A00A-A24248E90B3A.jpeg",
+          "sold_out": true
         },
         {
           "name": "Slate Pleco (Pseudancistrus genisetiger)",
