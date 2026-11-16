@@ -207,8 +207,8 @@
           "name": "Pygmy Cory (Gastrodermus pygmaeus)",
           "size": "1.5-2 cm",
           "price": "$8",
-          "image": "/img/IMG_4695.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_1672.jpeg",
+          "sold_out": false
         },
         {
           "name": "Albino Pygmy Cory (Gastrodermus pygmaeus var)",
@@ -221,15 +221,15 @@
           "name": "Panda Cory (Hoplisoma panda)",
           "size": "2-2.5 cm",
           "price": "$10",
-          "image": "/img/IMG_2802.jpeg",
+          "image": "/img/IMG_9705.jpeg",
           "sold_out": true
         },
         {
           "name": "Golden Panda Cory (Hoplisoma panda var)",
           "size": "2.5-3 cm",
           "price": "$15",
-          "image": "/img/IMG_2802.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_5077.jpeg",
+          "sold_out": false
         },
         {
           "name": "Julii Cory (Hoplisoma julii)",
@@ -242,15 +242,15 @@
           "name": "Sterbai Cory (Hoplisoma sterbai)",
           "size": "2.5-3 cm",
           "price": "$10",
-          "image": "/img/cory-sterbai.png",
+          "image": "/img/IMG_2800.jpeg",
           "sold_out": false
         },
         {
           "name": "CW28 Super Schwartzi Cory (Hoplisoma sp)",
           "size": "3-4 cm",
           "price": "$40",
-          "image": "/img/cory-sterbai.png",
-          "sold_out": true
+          "image": "/img/IMG_6109.jpeg",
+          "sold_out": false
         },
         {
           "name": "Ceara Bulldog Cory (Aspidoras raimundi)",
@@ -272,14 +272,14 @@
           "size": "2.5*3 cm",
           "price": "6/$25",
           "image": "/img/IMG_1673.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Rummynose Tetra (Hemigrammus bleheri)",
           "size": "3-3.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_2964.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Neon Tetra (Paracheirodon inessi)",
@@ -413,7 +413,7 @@
           "size": "1.5-2 cm",
           "price": "$8",
           "image": "/img/IMG_9700.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Phoenix Rasbora (Boraras merah)",
@@ -427,7 +427,7 @@
           "size": "2.5 cm",
           "price": "$8",
           "image": "/img/IMG_0708.jpeg",
-          "sold_out": true
+          "sold_out": false
         },
         {
           "name": "Emerald Dwarf Rasbora (Danio erythromicron)",
@@ -441,7 +441,7 @@
           "size": "3-3.5 cm",
           "price": "$9",
           "image": "/img/IMG_3084.jpeg",
-          "sold_out": false
+          "sold_out": true
         }
       ],
       "id": "rasbora"
