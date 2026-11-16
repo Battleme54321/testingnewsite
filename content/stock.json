@@ -1,5 +1,5 @@
 {
-  "stock_date": "November 11, 2026",
+  "stock_date": "November 16, 2026",
   "categories": [
     {
       "title": "Loricariidae",
@@ -10,29 +10,29 @@
           "name": "Vampire Pleco L007 (Leporacanthicus galaxias)",
           "size": "6-8 cm",
           "price": "$55",
-          "image": "/img/image2.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_2955.jpeg",
+          "sold_out": false
         },
         {
           "name": "Sunshine Pleco L014 (Scobinancistrus aureatus)",
           "size": "8-10 cm",
           "price": "$100",
-          "image": "/img/image2.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_7040.jpeg",
+          "sold_out": false
         },
         {
           "name": "Gold Nugget Pleco L018 (Baryancistrus xanthellus)",
           "size": "6-8 cm",
           "price": "$50",
-          "image": "/img/image2.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_7043.jpeg",
+          "sold_out": false
         },
         {
           "name": "Xingu Royal Pleco L027B (Panaque armbrusteri)",
           "size": "14-16 cm",
           "price": "$185",
-          "image": "/img/image2.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_7119.jpeg",
+          "sold_out": false
         },
         {
           "name": "Medusa Pleco L034 (Ancistrus ranunculus)",
@@ -46,7 +46,7 @@
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_5473.jpeg",
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Para Pleco L124 (Peckoltia sabaji)",
@@ -59,15 +59,15 @@
           "name": "Leopard Frog Pleco L134 (Peckoltia compta)",
           "size": "6-8 cm",
           "price": "$85",
-          "image": "/img/IMG_6567.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_6569.jpeg",
+          "sold_out": false
         },
         {
           "name": "Snowball Pleco L142 (Baryancistrus sp)",
           "size": "6-8 cm",
           "price": "$60",
-          "image": "/img/IMG_6567.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_2686.jpeg",
+          "sold_out": false
         },
         {
           "name": "Royal Pleco L190 (Panaque nigrolineatus)",
@@ -87,15 +87,15 @@
           "name": "Queen arabesque Pleco L260 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$80",
-          "image": "/img/IMG_3693.jpeg",
-          "sold_out": true
+          "image": "/img/IMG_5922.jpeg",
+          "sold_out": false
         },
         {
           "name": "Stardust Pleco L262 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$65",
-          "image": "/img/IMG_3693.jpeg",
-          "sold_out": true
+          "image": "/img/668A14A4-1953-483F-926D-91C454824BE3.jpeg",
+          "sold_out": false
         },
         {
           "name": "Sultan Pleco L264 (Leporacanthicus joselimai)",
