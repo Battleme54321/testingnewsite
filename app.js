@@ -177,6 +177,8 @@ function initPage(root) {
       // Show the card's already-loaded photo instantly, then swap in the full-size one when it's ready
       // (stops the previously opened fish from flashing up first).
       const thumb = m.querySelector('img'), full = m.dataset.full, token = (lb._token = (lb._token || 0) + 1);
+      // Lock the viewer to the photo's shape up front so it opens at full size (no small-then-big jump).
+      if (thumb && thumb.naturalWidth) lb.style.setProperty('--r', thumb.naturalWidth / thumb.naturalHeight);
       lbImg.src = thumb && thumb.currentSrc ? thumb.currentSrc : full; lbImg.alt = m.dataset.name;
       if (lbImg.src !== new URL(full, location.href).href) {
         const pre = new Image();
