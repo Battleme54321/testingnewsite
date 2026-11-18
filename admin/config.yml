@@ -36,6 +36,7 @@ collections:
                   - { name: price, label: Price (e.g. $65 or 6/$30), widget: string }
                   - { name: image, label: Photo, widget: image }
                   - { name: sold_out, label: Sold out?, widget: boolean, default: false }
+                  - { name: coming_soon, label: Coming soon?, widget: boolean, default: false, required: false }
       - name: settings
         label: Text & Contact
         file: content/settings.json
