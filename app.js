@@ -19,7 +19,11 @@ function buildPage(S, K, opts) {
       (so ? '<span style="background:#dc2626" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Sold out</span>' : '') +
       (cs ? '<span style="background:#f59e0b;color:#04222b" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide">Coming soon</span>' : '') +
       '</div><div class="flex flex-1 flex-col gap-1 p-4"><h3 class="font-semibold text-white">' + esc(i.name) + '</h3><p class="text-sm text-white/60">' + esc(i.size) +
-      '</p><div class="mt-2 flex items-center justify-between"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span></div></div></div>';
+      '</p><div class="mt-2 flex items-center gap-3"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span>' +
+      (i.stock_text ? '<span class="flex items-center gap-2 text-sm text-white/70">' +
+        (i.show_dot !== false ? '<span class="tsa-dot" style="display:inline-block;width:8px;height:8px;border-radius:9999px;background:#22c55e;flex-shrink:0"></span>' : '') +
+        esc(i.stock_text) + '</span>' : '') +
+      '</div></div></div>';
   };
 
   // Section link IDs are generated from each category title (unique, no typing needed).
@@ -32,7 +36,11 @@ function buildPage(S, K, opts) {
     return Object.assign({}, c, { id: id });
   });
   const pill = 'rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70 transition hover:border-[#5fd6c4] hover:text-[#5fd6c4]';
+  // Slow green pulse for the stock dot (kept here so the CMS preview gets it too).
+  const dotCss = '<style>@keyframes tsa-pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 6px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}' +
+    '.tsa-dot{animation:tsa-pulse 2.4s ease-out infinite}@media (prefers-reduced-motion:reduce){.tsa-dot{animation:none}}</style>';
   return (
+    dotCss +
     '<header class="sticky top-0 z-40 border-b border-white/10 bg-[#04222b]/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">' +
     '<a href="#top" class="flex items-center gap-2"><span class="text-xl font-bold tracking-tight text-white">' + esc(S.brand_first) + ' <span class="text-[#5fd6c4]">' + esc(S.brand_second) + '</span></span></a>' +
     '<nav class="hidden flex-wrap items-center gap-5 text-sm font-medium text-white/80 lg:flex">' +
