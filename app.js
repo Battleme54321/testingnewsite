@@ -42,7 +42,6 @@ function buildPage(S, K, opts) {
     ? new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/Toronto' })
     : (K.stock_date || '');
   const all = cats.reduce((a, c) => a.concat(c.items), []);
-  const available = all.filter(i => !i.sold_out && !i.coming_soon).length;
 
   // Headline: last two words get the italic teal accent.
   const words = String(S.hero_title || '').trim().split(/\s+/);
@@ -86,12 +85,7 @@ function buildPage(S, K, opts) {
       '<div class="ctas rv"><a class="btn btn-primary" href="#stock">Browse current stock ' + I.down + '</a><a class="btn btn-ghost" href="#contact">Place an order</a></div>' +
     '</div>' +
     '<div class="tank rv"><div class="tank-frame"><img src="' + esc(img(S.hero_image, 1800)) + '" alt="Planted aquarium with a school of tetras" fetchpriority="high"><div class="caustics"></div>' +
-    '</div>' +
-      '<div class="stats">' +
-        '<div class="stat"><strong>' + available + '<span class="live"></span></strong><span>Available now</span></div>' +
-        '<div class="stat"><strong>' + cats.length + '</strong><span>Categories</span></div>' +
-        '<div class="stat"><strong>GTA</strong><span>Same-day delivery</span></div>' +
-      '</div></div></section>' +
+    '</div></div></section>' +
 
     '<section class="info" id="delivery"><div class="wrap"><div class="info-grid">' +
       (S.info_cards || []).map((c, n) => '<div class="info-card rv"><div class="info-icon">' + infoIcons[n % infoIcons.length] + '</div><div><h3>' + esc(c.title) + '</h3><p>' + esc(c.text) + '</p></div></div>').join('') +
