@@ -1,99 +1,230 @@
-// Renders the page from content/settings.json and content/stock.json (edited via /admin).
-// buildPage() is also used by the live preview in /admin.
+// The Six Aquatics — redesign test.
+// Reads the same content/settings.json and content/stock.json that Sveltia CMS edits,
+// so every field (sold out, coming soon, stock text, green dot) keeps working.
+// buildPage() returns plain HTML so it can also be used by the CMS live preview.
+
 function buildPage(S, K, opts) {
   opts = opts || {};
-  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const img = (p, q) => opts.raw ? p : '/.netlify/images?url=' + encodeURIComponent(p) + q;
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  const img = (p, w) => (opts.raw || local || !p) ? p : '/.netlify/images?url=' + encodeURIComponent(p) + '&w=' + w + '&fm=webp&q=78';
   const mail = (subj, body) => 'mailto:' + S.email + (subj ? '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body) : '');
-  const ig = '<svg viewBox="0 0 24 24" fill="none" class="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"></circle></svg>';
-  const fb = '<svg viewBox="0 0 24 24" fill="none" class="h-5 w-5"><path d="M15 8.5h-1.5c-.6 0-1 .5-1 1.1V11H15l-.3 2.2h-2.2V21h-2.4v-7.8H8.5V11h1.6V9.3c0-2 1.2-3.3 3.2-3.3H15v2.5Z" fill="currentColor"></path></svg>';
-  const btnP = 'rounded-full bg-[#5fd6c4] px-6 py-3 text-sm font-semibold text-[#04222b] transition hover:bg-[#8ee8da]';
-  const btnS = 'rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#5fd6c4] hover:text-[#5fd6c4]';
 
-  const card = i => {
-    const so = i.sold_out;
-    const cs = !so && i.coming_soon; // if both are ticked, Sold out wins
-    return '<div class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:border-[#5fd6c4]/50 hover:bg-white/[0.07]">' +
-      '<div class="relative aspect-[4/3] w-full overflow-hidden bg-black/40"><img src="' + esc(img(i.image, '&w=480&h=360&fit=cover&fm=webp')) + '" alt="' + esc(i.name) +
-      '" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105 ' + '"' + (so ? ' style="opacity:0.08"' : cs ? ' style="opacity:0.35"' : '') + '>' +
-      (so ? '<span style="background:#dc2626" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Sold out</span>' : '') +
-      (cs ? '<span style="background:#f59e0b;color:#04222b" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide">Coming soon</span>' : '') +
-      '</div><div class="flex flex-1 flex-col gap-1 p-4"><h3 class="font-semibold text-white">' + esc(i.name) + '</h3><p class="text-sm text-white/60">' + esc(i.size) +
-      '</p><div class="mt-2 flex items-center gap-3"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span>' +
-      (i.stock_text ? '<span class="flex items-center gap-2 text-sm text-white" style="margin-left:10px">' +
-        (i.show_dot !== false ? '<span class="tsa-dot" style="display:inline-block;width:8px;height:8px;border-radius:9999px;background:#22c55e;flex-shrink:0"></span>' : '') +
-        esc(i.stock_text) + '</span>' : '') +
-      '</div></div></div>';
+  const I = {
+    ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>',
+    fb: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 8.5h-1.5c-.6 0-1 .5-1 1.1V11H15l-.3 2.2h-2.2V21h-2.4v-7.8H8.5V11h1.6V9.3c0-2 1.2-3.3 3.2-3.3H15v2.5Z"/></svg>',
+    mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>',
+    down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>',
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+    ruler: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16 16 3l5 5L8 21z"/><path d="m7 12 2 2M10 9l2 2M13 6l2 2"/></svg>',
+    truck: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',
+    plane: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 13.5 3 11l1.5-1.5 8 .5 4.5-4.5a2 2 0 0 1 3 3L15.5 13l.5 8L14.5 22.5 12 15l-3 3v2.5L7.5 22 6 18l-4-1.5L3.5 15H6z"/></svg>',
+    leaf: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19 13 11"/></svg>',
+    gmail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v11h4v-7l5 4 5-4v7h4V7l-9 6.5z"/></svg>',
+    copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>',
+    close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>'
   };
 
-  // Section link IDs are generated from each category title (unique, no typing needed).
+  // "Cardinal Tetra (Paracheirodon axelrodi)" -> common + scientific name
+  const split = n => { const m = String(n || '').match(/^(.*?)\s*\((.+)\)\s*$/); return m ? [m[1], m[2]] : [String(n || ''), '']; };
+
   const used = {};
-  const cats = (K.categories || []).map(function (c, n) {
+  const cats = (K.categories || []).map(c => {
     let base = String(c.title || 'section').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'section';
     let id = base, k = 2;
     while (used[id]) id = base + '-' + k++;
     used[id] = true;
-    return Object.assign({}, c, { id: id });
+    return Object.assign({}, c, { id: id, items: c.items || [] });
   });
-  const pill = 'rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70 transition hover:border-[#5fd6c4] hover:text-[#5fd6c4]';
-  // Slow green pulse for the stock dot (kept here so the CMS preview gets it too).
-  const dotCss = '<style>@keyframes tsa-pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 6px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}' +
-    '.tsa-dot{animation:tsa-pulse 2.4s ease-out infinite}@media (prefers-reduced-motion:reduce){.tsa-dot{animation:none}}</style>';
+  // Stock date: today's date (Toronto time) unless the CMS switch is turned off.
+  const stockDate = K.stock_date_auto !== false
+    ? new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/Toronto' })
+    : (K.stock_date || '');
+  const all = cats.reduce((a, c) => a.concat(c.items), []);
+  const available = all.filter(i => !i.sold_out && !i.coming_soon).length;
+
+  // Headline: last two words get the italic teal accent.
+  const words = String(S.hero_title || '').trim().split(/\s+/);
+  const tail = words.length > 3 ? words.splice(-2).join(' ') : '';
+  const title = esc(words.join(' ')) + (tail ? ' <i>' + esc(tail) + '</i>' : '');
+
+  const card = i => {
+    const so = !!i.sold_out, cs = !so && !!i.coming_soon;
+    const [common, sci] = split(i.name);
+    return '<article class="card' + (so ? ' is-sold' : '') + (cs ? ' is-soon' : '') + '" data-q="' + esc(String(i.name || '').toLowerCase()) + '"' + (so || cs ? ' data-out' : '') + '>' +
+      '<button type="button" class="card-media" data-full="' + esc(i.image) + '" data-name="' + esc(common) + '" data-sci="' + esc(sci) + '" aria-label="View photo of ' + esc(common) + '">' +
+        (i.image ? '<img src="' + esc(img(i.image, 520)) + '" alt="' + esc(i.name) + '" loading="lazy">' : '') +
+        (so ? '<span class="badge badge-sold">Sold out</span>' : '') +
+        (cs ? '<span class="badge badge-soon">Coming soon</span>' : '') +
+      '</button>' +
+      '<div class="card-body"><h4>' + esc(common) + '</h4>' + (sci ? '<div class="sci">' + esc(sci) + '</div>' : '') +
+        (i.size ? '<span class="size">' + I.ruler + esc(i.size) + '</span>' : '') +
+        '<div class="card-foot"><div class="price-wrap"><span class="price">' + esc(i.price) + '</span>' +
+          (i.stock_text ? '<span class="stock-txt">' + (i.show_dot !== false ? '<span class="live"></span>' : '') + esc(i.stock_text) + '</span>' : '') +
+        '</div>' +
+      '</div></div></article>';
+  };
+
+  const infoIcons = [I.truck, I.plane, I.leaf];
+
   return (
-    dotCss +
-    '<header class="sticky top-0 z-40 border-b border-white/10 bg-[#04222b]/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">' +
-    '<a href="#top" class="flex items-center gap-2"><span class="text-xl font-bold tracking-tight text-white">' + esc(S.brand_first) + ' <span class="text-[#5fd6c4]">' + esc(S.brand_second) + '</span></span></a>' +
-    '<nav class="hidden flex-wrap items-center gap-5 text-sm font-medium text-white/80 lg:flex">' +
-    cats.map(c => '<a href="#' + esc(c.id) + '" class="transition hover:text-[#5fd6c4]">' + esc(c.nav_label || c.title) + '</a>').join('') + '</nav>' +
-    '<div class="flex items-center gap-3"><a href="' + esc(S.instagram) + '" target="_blank" rel="noreferrer" aria-label="Instagram" class="text-white/70 transition hover:text-[#5fd6c4]">' + ig + '</a>' +
-    '<a href="' + esc(S.facebook) + '" target="_blank" rel="noreferrer" aria-label="Facebook" class="text-white/70 transition hover:text-[#5fd6c4]">' + fb + '</a>' +
-    '<a href="#contact" class="rounded-full bg-[#5fd6c4] px-4 py-2 text-sm font-semibold text-[#04222b] transition hover:bg-[#8ee8da]">Place an order</a></div></div></header>' +
+    '<header class="hdr"><div class="wrap">' +
+      '<a href="#top" class="brand">' + (S.logo_image ? '<img src="' + esc(img(S.logo_image, 96)) + '" alt="">' : '') +
+        '<span>' + esc(S.brand_first) + ' <em>' + esc(S.brand_second) + '</em></span></a>' +
+      '<nav><a href="#stock">Current stock</a><a href="#delivery">Delivery</a><a href="#contact">Contact</a></nav>' +
+      '<div class="hdr-right">' +
+        '<a class="icon-btn" href="' + esc(S.instagram) + '" target="_blank" rel="noreferrer" aria-label="Instagram">' + I.ig + '</a>' +
+        '<a class="icon-btn" href="' + esc(S.facebook) + '" target="_blank" rel="noreferrer" aria-label="Facebook">' + I.fb + '</a>' +
+        '<a class="btn btn-primary btn-sm" href="#contact">Order now</a>' +
+      '</div></div></header>' +
 
-    '<section class="relative overflow-hidden border-b border-white/10"><img src="' + esc(img(S.hero_image, '&w=1600&fm=webp&q=80')) + '" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">' +
-    '<div class="absolute inset-0 bg-gradient-to-b from-[#04222b]/60 via-[#04222b]/80 to-[#04222b]"></div>' +
-    '<div class="relative mx-auto max-w-6xl px-5 py-16 text-center sm:py-24">' +
-    (S.logo_image ? '<img src="' + esc(img(S.logo_image, '&w=480&fm=png')) + '" alt="' + esc(S.brand_first + ' ' + S.brand_second) + '" class="mx-auto" style="width:250px;max-width:65%;height:auto;margin-bottom:28px">' : '') +
-    '<p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd6c4]">' + esc(S.hero_eyebrow) + '</p>' +
-    '<h1 class="mx-auto max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">' + esc(S.hero_title) + '</h1><p class="mx-auto mt-5 max-w-xl text-white/70">' + esc(S.hero_text) + '</p>' +
-    '<div class="mt-8 flex flex-wrap items-center justify-center gap-4"><a href="#stock" class="' + btnP + '">Browse current stock</a><a href="#contact" class="' + btnS + '">Place an order</a></div></div></section>' +
+    '<section class="hero"><div class="wrap">' +
+      '<div class="eyebrow rv"><span class="live"></span><b>' + esc(S.hero_eyebrow) + '</b>' + (stockDate ? '<span class="sep"></span><span class="upd">Stock updated ' + esc(stockDate) + '</span>' : '') + '</div>' +
+      '<h1 class="rv">' + title + '</h1>' +
+      '<p class="lead rv">' + esc(S.hero_text) + '</p>' +
+      '<div class="ctas rv"><a class="btn btn-primary" href="#stock">Browse current stock ' + I.down + '</a><a class="btn btn-ghost" href="#contact">Place an order</a></div>' +
+    '</div>' +
+    '<div class="tank rv"><div class="tank-frame"><img src="' + esc(img(S.hero_image, 1800)) + '" alt="Planted aquarium with a school of tetras" fetchpriority="high"><div class="caustics"></div>' +
+    '</div>' +
+      '<div class="stats">' +
+        '<div class="stat"><strong>' + available + '<span class="live"></span></strong><span>Available now</span></div>' +
+        '<div class="stat"><strong>' + cats.length + '</strong><span>Categories</span></div>' +
+        '<div class="stat"><strong>GTA</strong><span>Same-day delivery</span></div>' +
+      '</div></div></section>' +
 
-    '<section class="border-b border-white/10 bg-[#062b36]"><div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-5 py-10 sm:grid-cols-2">' +
-    (S.info_cards || []).map(c => '<div class="rounded-2xl border border-white/10 p-6"><h2 class="mb-1 font-semibold text-[#5fd6c4]">' + esc(c.title) + '</h2><p class="text-sm text-white/70">' + esc(c.text) + '</p></div>').join('') +
+    '<section class="info" id="delivery"><div class="wrap"><div class="info-grid">' +
+      (S.info_cards || []).map((c, n) => '<div class="info-card rv"><div class="info-icon">' + infoIcons[n % infoIcons.length] + '</div><div><h3>' + esc(c.title) + '</h3><p>' + esc(c.text) + '</p></div></div>').join('') +
+    '</div></div></section>' +
+
+    '<section class="stock" id="stock"><div class="wrap">' +
+      '<div class="sec-head rv"><div>' + (stockDate ? '<div class="kicker">Updated ' + esc(stockDate) + '</div>' : '') + '<h2>Current stock</h2></div><p>' + esc(S.stock_note) + '</p></div>' +
+      '<div class="toolbar"><div class="tool-row">' +
+        '<label class="search">' + I.search + '<input type="search" placeholder="Search fish…" aria-label="Search fish" data-search></label>' +
+        '<div class="chips" role="tablist" aria-label="Categories">' +
+          '<button type="button" class="chip on" data-cat="all">All <small>' + all.length + '</small></button>' +
+          cats.map(c => '<button type="button" class="chip" data-cat="' + esc(c.id) + '">' + esc(c.nav_label || c.title) + ' <small>' + c.items.length + '</small></button>').join('') +
+        '</div>' +
+        '<label class="toggle"><input type="checkbox" data-instock><span class="sw"></span>In stock only</label>' +
+      '</div></div>' +
+      cats.map(c =>
+        '<div class="cat" id="' + esc(c.id) + '" data-cat-id="' + esc(c.id) + '">' +
+          '<div class="cat-head"><h3>' + esc(c.title) + '</h3><span class="count" data-count>' + c.items.length + ' items</span>' + (c.description ? '<p>' + esc(c.description) + '</p>' : '') + '</div>' +
+          '<div class="grid">' + c.items.map(card).join('') + '</div></div>').join('') +
+      '<div class="empty" data-empty hidden><strong>No fish match that.</strong>Try a different name, or clear the filters.</div>' +
     '</div></section>' +
 
-    '<section id="stock" class="mx-auto max-w-6xl px-5 py-14"><div class="mb-10 text-center"><h2 class="text-2xl font-bold sm:text-3xl">Current Stock</h2>' +
-    '<p class="mt-2 text-sm text-white/50">As of ' + esc(K.stock_date) + '. ' + esc(S.stock_note) + '</p></div>' +
-    '<nav class="mb-12 flex flex-wrap justify-center gap-2">' + cats.map(c => '<a href="#' + esc(c.id) + '" class="' + pill + '">' + esc(c.title) + '</a>').join('') + '</nav>' +
-    '<div class="flex flex-col gap-16">' + cats.map(c =>
-      '<div id="' + esc(c.id) + '"><div class="mb-5 flex items-baseline justify-between border-b border-white/10 pb-3"><h3 class="text-xl font-bold">' + esc(c.title) + '</h3>' +
-      (c.description ? '<span class="text-sm text-white/50">' + esc(c.description) + '</span>' : '') + '</div>' +
-      '<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">' + (c.items || []).map(card).join('') + '</div></div>').join('') +
-    '</div></section>' +
+    '<section class="contact" id="contact"><div class="wrap"><div class="contact-panel rv"><div class="caustics"></div>' +
+      (S.logo_image ? '<img class="logo" src="' + esc(img(S.logo_image, 200)) + '" alt="">' : '') +
+      '<h2>' + esc(S.contact_title) + '</h2>' +
+      '<p>' + esc(S.contact_text).split(esc(S.email)).join('<a href="' + esc(mail()) + '">' + esc(S.email) + '</a>') + '</p>' +
+      '<div class="ctas"><div class="email-wrap"><button type="button" class="btn btn-primary" data-email-btn aria-expanded="false">' + I.mail + 'Email us</button>' +
+        '<div class="email-menu" data-email-menu hidden>' +
+          '<div class="email-addr">' + esc(S.email) + '</div>' +
+          '<a href="' + esc(mail('Order inquiry', '')) + '">' + I.mail + 'Open my email app</a>' +
+          '<a href="' + esc('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(S.email) + '&su=' + encodeURIComponent('Order inquiry')) + '" target="_blank" rel="noreferrer">' + I.gmail + 'Write in Gmail</a>' +
+          '<button type="button" data-copy="' + esc(S.email) + '">' + I.copy + '<span>Copy email address</span></button>' +
+        '</div></div>' +
+        '<a class="btn btn-ghost" href="' + esc(S.instagram) + '" target="_blank" rel="noreferrer">' + I.ig + 'Instagram</a>' +
+        '<a class="btn btn-ghost" href="' + esc(S.facebook) + '" target="_blank" rel="noreferrer">' + I.fb + 'Facebook</a></div>' +
+    '</div></div></section>' +
 
-    '<section id="contact" class="border-t border-white/10 bg-[#062b36] py-16"><div class="mx-auto max-w-2xl px-5 text-center"><h2 class="text-2xl font-bold">' + esc(S.contact_title) + '</h2>' +
-    '<p class="mt-3 text-white/70">' + esc(S.contact_text).split(esc(S.email)).join('<a href="' + esc(mail()) + '" class="text-[#5fd6c4] underline">' + esc(S.email) + '</a>') + '</p><div class="mt-6 flex flex-wrap items-center justify-center gap-4">' +
-    '<a href="' + esc(S.instagram) + '" target="_blank" rel="noreferrer" class="' + btnS + '">Instagram</a>' +
-    '<a href="' + esc(S.facebook) + '" target="_blank" rel="noreferrer" class="' + btnS + '">Facebook</a></div></div></section>' +
-    '<footer class="border-t border-white/10 py-6 text-center text-xs text-white/40">&copy; ' + new Date().getFullYear() + ' ' + esc(S.footer) + '</footer>'
+    '<footer><div class="wrap"><span>&copy; ' + new Date().getFullYear() + ' ' + esc(S.footer) + '</span><a href="#top">Back to top ↑</a></div></footer>' +
+
+    '<div class="lb" data-lb aria-hidden="true"><button type="button" class="lb-close" data-lb-close aria-label="Close">' + I.close + '</button><figure><img alt=""><figcaption></figcaption></figure></div>'
   );
 }
 
 window.buildPage = buildPage;
 
+// ---------- Interactions (live site only) ----------
+function initPage(root) {
+  const $ = (s, el) => (el || root).querySelector(s);
+  const $$ = (s, el) => Array.from((el || root).querySelectorAll(s));
+
+  // Header / toolbar borders on scroll
+  const hdr = $('.hdr'), bar = $('.toolbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    if (bar) bar.classList.toggle('stuck', bar.getBoundingClientRect().top <= hdr.offsetHeight + 1);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Filters
+  const state = { cat: 'all', q: '', inStock: false };
+  const apply = () => {
+    let shown = 0;
+    $$('.cat').forEach(sec => {
+      let n = 0;
+      $$('.card', sec).forEach(card => {
+        const ok = (!state.q || card.dataset.q.indexOf(state.q) > -1) && (!state.inStock || !card.hasAttribute('data-out'));
+        card.hidden = !ok; if (ok) n++;
+      });
+      const vis = n > 0 && (state.cat === 'all' || state.cat === sec.dataset.catId);
+      sec.hidden = !vis; if (vis) shown += n;
+      $('[data-count]', sec).textContent = n + (n === 1 ? ' item' : ' items');
+    });
+    $('[data-empty]').hidden = shown > 0;
+  };
+  const toStock = () => { const t = $('#stock .toolbar'); if (t && t.getBoundingClientRect().top > hdr.offsetHeight + 2) $('#stock').scrollIntoView({ behavior: 'smooth' }); };
+  $$('.chip').forEach(ch => ch.addEventListener('click', () => {
+    $$('.chip').forEach(c => c.classList.toggle('on', c === ch));
+    state.cat = ch.dataset.cat; apply(); toStock();
+  }));
+  $('[data-search]').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); apply(); });
+  $('[data-instock]').addEventListener('change', e => { state.inStock = e.target.checked; apply(); });
+
+  // Lightbox
+  const lb = $('[data-lb]'), lbImg = $('img', lb), lbCap = $('figcaption', lb);
+  const close = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); };
+  root.addEventListener('click', e => {
+    const m = e.target.closest('.card-media');
+    if (m && m.dataset.full) {
+      lbImg.src = m.dataset.full; lbImg.alt = m.dataset.name;
+      lbCap.innerHTML = ''; lbCap.append(m.dataset.name);
+      if (m.dataset.sci) { const i = document.createElement('i'); i.textContent = m.dataset.sci; lbCap.append(i); }
+      lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+    }
+    if (e.target === lb || e.target.closest('[data-lb-close]')) close();
+  });
+  addEventListener('keydown', e => { if (e.key === 'Escape') { close(); closeMenu(); } });
+
+  // "Email us" menu: email app, Gmail, or copy the address
+  const eBtn = $('[data-email-btn]'), eMenu = $('[data-email-menu]');
+  const closeMenu = () => { if (eMenu) { eMenu.hidden = true; eBtn.setAttribute('aria-expanded', 'false'); } };
+  if (eBtn) {
+    eBtn.addEventListener('click', e => { e.stopPropagation(); eMenu.hidden = !eMenu.hidden; eBtn.setAttribute('aria-expanded', String(!eMenu.hidden)); });
+    document.addEventListener('click', e => { if (!e.target.closest('.email-wrap')) closeMenu(); });
+    const cp = $('[data-copy]', eMenu);
+    cp.addEventListener('click', () => {
+      const done = () => { $('span', cp).textContent = 'Copied!'; setTimeout(() => { $('span', cp).textContent = 'Copy email address'; }, 1800); };
+      const fallback = () => { const t = document.createElement('textarea'); t.value = cp.dataset.copy; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (x) {} t.remove(); done(); };
+      navigator.clipboard ? navigator.clipboard.writeText(cp.dataset.copy).then(done, fallback) : fallback();
+    });
+  }
+
+  // Reveal on scroll
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('js-rv');
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    $$('.rv').forEach((el, n) => { el.style.transitionDelay = (el.closest('.hero') ? n * 80 : 0) + 'ms'; io.observe(el); });
+  }
+}
+
 if (document.getElementById('app')) {
   Promise.all([
     fetch('/content/settings.json').then(r => r.json()),
     fetch('/content/stock.json').then(r => r.json())
-  ]).then(function (d) {
-    document.getElementById('app').innerHTML = buildPage(d[0], d[1]);
+  ]).then(d => {
+    const app = document.getElementById('app');
+    app.innerHTML = buildPage(d[0], d[1]);
+    initPage(app);
     if (location.hash) { const t = document.getElementById(location.hash.slice(1)); t && t.scrollIntoView(); }
   });
 }
 
-// If Netlify image resizing isn't available (e.g. local preview), fall back to the original file.
-document.addEventListener('error', function (e) {
+// If Netlify image resizing isn't available, fall back to the original file.
+document.addEventListener('error', e => {
   const t = e.target;
-  if (t.tagName === 'IMG' && t.src.indexOf('/.netlify/images') > -1) {
-    t.src = decodeURIComponent(new URL(t.src).searchParams.get('url'));
-  }
+  if (t.tagName === 'IMG' && t.src.indexOf('/.netlify/images') > -1) t.src = decodeURIComponent(new URL(t.src).searchParams.get('url'));
 }, true);
