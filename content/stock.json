@@ -11,182 +11,260 @@
           "size": "6-8 cm",
           "price": "$55",
           "image": "/img/IMG_2955.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Sunshine Pleco L014 (Scobinancistrus aureatus)",
           "size": "8-10 cm",
           "price": "$100",
           "image": "/img/IMG_7040.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Gold Nugget Pleco L018 (Baryancistrus xanthellus)",
           "size": "6-8 cm",
           "price": "$50",
           "image": "/img/IMG_7043.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Xingu Royal Pleco L027B (Panaque armbrusteri)",
           "size": "14-16 cm",
           "price": "$185",
           "image": "/img/IMG_7119.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Medusa Pleco L034 (Ancistrus ranunculus)",
           "size": "8-10 cm",
           "price": "$50",
           "image": "/img/image2.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Clown Pleco L104 (Panaqolus maccus)",
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_5473.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Para Pleco L124 (Peckoltia sabaji)",
           "size": "10-11 cm",
           "price": "$55",
           "image": "/img/IMG_6567.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Leopard Frog Pleco L134 (Peckoltia compta)",
           "size": "6-8 cm",
           "price": "$85",
           "image": "/img/IMG_6569.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Snowball Pleco L142 (Baryancistrus sp)",
           "size": "6-8 cm",
           "price": "$60",
           "image": "/img/IMG_2686.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Royal Pleco L190 (Panaque nigrolineatus)",
           "size": "4-5 cm",
           "price": "$40",
           "image": "/img/IMG_6582.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Emperor Pleco L204 (Panaqolus albivermis)",
-          "size": "6-7 cm",
+          "size": "6-8 cm",
           "price": "$60",
           "image": "/img/IMG_3693.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Queen arabesque Pleco L260 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$80",
           "image": "/img/IMG_5922.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Stardust Pleco L262 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$65",
           "image": "/img/668A14A4-1953-483F-926D-91C454824BE3.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Sultan Pleco L264 (Leporacanthicus joselimai)",
           "size": "6-8 cm",
           "price": "$80",
           "image": "/img/IMG_7038.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Titanic Pleco L273 (Leporacanthicus joselimai)",
           "size": "14-16 cm",
           "price": "$250",
           "image": "/img/IMG_6607.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Dwarf Spiny Pleco L280 (Hypancistrus vandragti)",
           "size": "2.5-3 cm",
           "price": "$50",
           "image": "/img/IMG_1939.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "King Tiger B&W Pleco L333 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$50",
           "image": "/img/IMG_7275.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Luna Angel Pleco L339 (Hypancistrus lunaorum)",
           "size": "8 cm",
           "price": "$40",
           "image": "/img/IMG_4696.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Mega Clown Pleco L340 (Hypancistrus sp)",
           "size": "6-8 cm",
           "price": "$40",
           "image": "/img/IMG_4697.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Dwarf Snowball Pleco L471 (Hypancistrus sp)",
           "size": "3-4 cm",
           "price": "$40",
           "image": "/img/3ebf8c51-36aa-4a08-81a8-9ab503853d78.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Rio Itenez Bristlenose Pleco L519 (Ancistrus sp)",
           "size": "3-4 cm",
           "price": "$45",
           "image": "/img/7e38c4cf-906e-4994-942c-32703133c1cb.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Golden Sailfin Luteus Pleco Phase III (Hypostomus luteus)",
           "size": "28-33 cm",
           "price": "$1,400",
           "image": "/img/E42EB679-20E0-4773-8698-FF4AF695C158.png",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Slate Pleco (Pseudancistrus genisetiger)",
           "size": "8 cm",
           "price": "$65",
           "image": "/img/AA2EE9AB-4133-4418-A00A-A24248E90B3A.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Rel Lizard L010A (Rhineloricaria sp)",
           "size": "3-4 cm",
           "price": "$25",
           "image": "/img/IMG_2102.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Chocolate Whiptail (Rhineloricaria Lanceolata)",
           "size": "4-5 cm",
           "price": "$20",
           "image": "/img/IMG_4699.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Oto Cat (Otocinclus affinis)",
           "size": "2.5-3 cm",
           "price": "$6",
           "image": "/img/IMG_0029.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "loricariidae"
@@ -201,63 +279,90 @@
           "size": "5-6 cm",
           "price": "$20",
           "image": "/img/372c1130-0c7d-4275-8f23-71d4b59ea418.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Pygmy Cory (Gastrodermus pygmaeus)",
           "size": "1.5-2 cm",
           "price": "$8",
           "image": "/img/IMG_1672.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Albino Pygmy Cory (Gastrodermus pygmaeus var)",
           "size": "1.5-2 cm",
           "price": "$12",
           "image": "/img/IMG_4695.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Panda Cory (Hoplisoma panda)",
           "size": "2-2.5 cm",
           "price": "$10",
           "image": "/img/IMG_9705.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Golden Panda Cory (Hoplisoma panda var)",
           "size": "2.5-3 cm",
           "price": "$15",
           "image": "/img/IMG_5077.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Julii Cory (Hoplisoma julii)",
           "size": "2.5-3 cm",
           "price": "$10",
           "image": "/img/IMG_2802.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Sterbai Cory (Hoplisoma sterbai)",
           "size": "2.5-3 cm",
           "price": "$10",
           "image": "/img/IMG_2800.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "CW28 Super Schwartzi Cory (Hoplisoma sp)",
           "size": "3-4 cm",
           "price": "$40",
           "image": "/img/IMG_6109.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Ceara Bulldog Cory (Aspidoras raimundi)",
           "size": "2-3 cm",
           "price": "$12",
           "image": "/img/IMG_4706.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "corydoras"
@@ -272,112 +377,160 @@
           "size": "2.5*3 cm",
           "price": "6/$25",
           "image": "/img/IMG_1673.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Rummynose Tetra (Hemigrammus bleheri)",
           "size": "3-3.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_2964.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Neon Tetra (Paracheirodon inessi)",
           "size": "2-2.5 cm",
           "price": "6/$25",
           "image": "/img/IMG_2966.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Green Neon Tetra (Paracheirodon simulans)",
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_1674.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Ember Tetra (Hyphessobrycon amandae)",
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_0123.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Diamond Tetra (Moenkhausia pitierri)",
           "size": "2.5-3 cm",
           "price": "6/$30",
           "image": "/img/IMG_1276.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Kerri Tetra (Inpaichthys kerri)",
           "size": "2-2.5 cm",
           "price": "6/$25",
           "image": "/img/IMG_6611.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Black Neon Tetra (Hyphessobrycon herbertaxelrodi)",
           "size": "2.5-3 cm",
           "price": "6/$25",
           "image": "/img/IMG_1280.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Penguin Tetra (Thayeria boehlkei)",
           "size": "2.5 cm",
           "price": "6/$25",
           "image": "/img/IMG_1275.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Black Emperor Tetra (Nematobrycon palmeri)",
           "size": "2.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_1272.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Scratched Inpa Tetra (Inpaichthys parauapiranga)",
           "size": "3-3.5 cm",
           "price": "$10",
           "image": "/img/IMG_2798.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Racoon Tetra (Hyphessobrycon procyon)",
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_2784.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Black Arrow Tetra (Inpaichthys luizae)",
           "size": "1.5-2 cm",
           "price": "$25",
           "image": "/img/IMG_4687.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Peugot Tetra (Hyphessobrycon peugeoti)",
           "size": "2-2.5 cm",
           "price": "$35",
           "image": "/img/IMG_5085.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Bllueberry Tetra (Hyphessobrycon wadai)",
           "size": "3-3.5 cm",
           "price": "$12",
           "image": "/img/IMG_4688.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Blue Lapis Tetra (Hyphessobrycon cyanotaenia)",
           "size": "2 cm",
           "price": "$10",
           "image": "/img/IMG_4703.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "tetra"
@@ -392,56 +545,80 @@
           "size": "2.5-3 cm",
           "price": "6/$30",
           "image": "/img/IMG_9703.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Galaxy Rasbora (Danio margaritatus)",
           "size": "1.5-2 cm",
           "price": "$8",
           "image": "/img/IMG_0707.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Strawberry Rasbora (Boraras naevus)",
           "size": "1.5 cm",
           "price": "6/$30",
           "image": "/img/IMG_4690.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Blue Neon Rasbora (Sundadanio axelrodi blue)",
           "size": "1.5-2 cm",
           "price": "$8",
           "image": "/img/IMG_9700.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Phoenix Rasbora (Boraras merah)",
           "size": "1.5-2 cm",
           "price": "6/$30",
           "image": "/img/IMG_4698.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Neon Green Rasbora (Microdevario kubotai)",
           "size": "2.5 cm",
           "price": "$8",
           "image": "/img/IMG_0708.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Emerald Dwarf Rasbora (Danio erythromicron)",
           "size": "2-2.5 cm",
           "price": "$8",
           "image": "/img/IMG_0706.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Asian Rummynose Rasbora Males (Sawbwa resplendens)",
           "size": "3-3.5 cm",
           "price": "$9",
           "image": "/img/IMG_3084.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rasbora"
@@ -456,42 +633,60 @@
           "size": "2-2.5 cm",
           "price": "$8",
           "image": "/img/IMG_2112.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Red Neon Rainbowfish (Pseudomugil luminatus)",
           "size": "2-2.5 cm",
           "price": "$12",
           "image": "/img/IMG_0709.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Threadfin Rainbowfish Males (Iriatherina werneri)",
           "size": "2-3 cm",
           "price": "$7",
           "image": "/img/IMG_3160.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Gertrudes Blue Eye Rainbowfish (Pseudomugil gertrudae)",
           "size": "2.5 cm",
           "price": "$7",
           "image": "/img/IMG_3161.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Southern Blue Eye Rainbowfish (Pseudomugil signifer)",
           "size": "2.5 cm",
           "price": "$7",
           "image": "/img/IMG_4689.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Neon Dwarf Rainbowfish (Melanotaenia praecox)",
           "size": "2.5-3 cm",
           "price": "$8",
           "image": "/img/IMG_4207.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "other"
@@ -506,35 +701,50 @@
           "size": "2.5-3 cm",
           "price": "$6",
           "image": "/img/IMG_9417.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Red Wag Cauliflower Sabertail (Xiphophorus helleri)",
           "size": "5-6 cm",
           "price": "$60/pair",
           "image": "/img/IMG_3156.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Red Hamburg Cauliflower Swordtail (Xiphophorus helleri)",
           "size": "5-6 cm",
           "price": "$60/pair",
           "image": "/img/IMG_0593.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Albino Bloodred Cauliflower Sabertail (Xiphophorus helleri)",
           "size": "6-7 cm",
           "price": "$45/pair",
           "image": "/img/IMG_2120.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Assorted Endlers (Poecilia wingei)",
           "size": "2.5-3 cm",
           "price": "$5",
           "image": "/img/IMG_4705.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rainbowfish"
@@ -549,63 +759,90 @@
           "size": "2.5-3 cm",
           "price": "$12",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Licorice Gourami (Parosphromenus deissneri)",
           "size": "2-2.5 cm",
           "price": "$18",
           "image": "/img/IMG_5080.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Nemo Copper (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$40",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Halfmoon Avatar (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$50",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Avatar (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$50",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Yellow Hellboy (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$50",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Red Hellboy (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$50",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Red Dragon (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$50",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Betta Plakat Candy (Betta splendens var)",
           "size": "3-5 cm",
           "price": "$40",
           "image": "/img/IMG_4523.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rainbowfish"
@@ -620,14 +857,20 @@
           "size": "3-4 cm",
           "price": "$20",
           "image": "/img/IMG_4691.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Clown Killifish (Epiplatys annulatus)",
           "size": "3 cm",
           "price": "$8",
           "image": "/img/IMG_2761.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rainbowfish"
@@ -642,14 +885,20 @@
           "size": "2.5 cm",
           "price": "$75",
           "image": "/img/IMG_4704.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Red Shining Pencilfish (Nannostomus nitidus)",
           "size": "3 cm",
           "price": "6/$30",
           "image": "/img/IMG_2114.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rainbowfish"
@@ -664,49 +913,70 @@
           "size": "2.5-3 cm",
           "price": "$10",
           "image": "/img/IMG_2105.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Clown Loach (Chromobotia macracanthus))",
           "size": "4-5 cm",
           "price": "$15",
           "image": "/img/IMG_2756.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Blue Zebra Borneo Hillstream Loach SK3 (Gastromyzon sp)",
           "size": "2.5-3 cm",
           "price": "$20",
           "image": "/img/IMG_2101.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Bloody Mary Hillstream Loach (Gastromyzon sp)",
           "size": "2.5-3 cm",
           "price": "$35",
           "image": "/img/IMG_2099.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Spotted Hillstream Loach (Gastromyzon punctulatus)",
           "size": "2.5-3 cm",
           "price": "$15",
           "image": "/img/IMG_2099.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Striped Hillstream Loach (Gastromyzon zebrinus)",
           "size": "2.5-3 cm",
           "price": "$15",
           "image": "/img/IMG_2099.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Panda Garra (Garra flavatra)",
           "size": "2 cm",
           "price": "$12",
           "image": "/img/IMG_1279.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "dry-goods"
@@ -721,21 +991,30 @@
           "size": "3.5-4 cm",
           "price": "$20",
           "image": "/img/IMG_5088.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Golden White Cloud Mountain Minnow (Tanichthys albonubes)",
           "size": "2.5-3 cm",
           "price": "6/$25",
           "image": "/img/IMG_4209.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Cherry Barb (Puntius titteya)",
           "size": "2-2.5 cm",
           "price": "6/$25",
           "image": "/img/IMG_1883.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "dry-goods"
@@ -750,28 +1029,40 @@
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_4095.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Blue Dream Shrimp (Neocaridina davidi)",
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_4094.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Orange Pumpkin Shrimp (Neocaridina davidi)",
           "size": "1.5-2 cm",
           "price": "6/$25",
           "image": "/img/IMG_4094.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Assassin Snail (Anentome helena)",
           "size": "1.5 cm",
           "price": "$5",
           "image": "/img/IMG_2124.jpeg",
-          "sold_out": false
+          "sold_out": false,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ],
       "id": "rainbowfish"
@@ -786,21 +1077,30 @@
           "size": "170g",
           "price": "$30",
           "image": "/img/IMG_4700.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Repashy Bottom Scratcher",
           "size": "170g",
           "price": "$30",
           "image": "/img/IMG_4702.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         },
         {
           "name": "Pleco Cave",
           "size": "M",
           "price": "$10",
           "image": "/img/IMG_0459.jpeg",
-          "sold_out": true
+          "sold_out": true,
+          "coming_soon": false,
+          "stock_text": "",
+          "show_dot": true
         }
       ]
     }
