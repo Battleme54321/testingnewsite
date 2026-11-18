@@ -20,7 +20,7 @@ function buildPage(S, K, opts) {
       (cs ? '<span style="background:#f59e0b;color:#04222b" class="absolute right-3 top-3 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide">Coming soon</span>' : '') +
       '</div><div class="flex flex-1 flex-col gap-1 p-4"><h3 class="font-semibold text-white">' + esc(i.name) + '</h3><p class="text-sm text-white/60">' + esc(i.size) +
       '</p><div class="mt-2 flex items-center gap-3"><span class="text-lg font-bold text-[#5fd6c4]">' + esc(i.price) + '</span>' +
-      (i.stock_text ? '<span class="flex items-center gap-2 text-sm text-white/70">' +
+      (i.stock_text ? '<span class="flex items-center gap-2 text-sm text-white" style="margin-left:10px">' +
         (i.show_dot !== false ? '<span class="tsa-dot" style="display:inline-block;width:8px;height:8px;border-radius:9999px;background:#22c55e;flex-shrink:0"></span>' : '') +
         esc(i.stock_text) + '</span>' : '') +
       '</div></div></div>';
