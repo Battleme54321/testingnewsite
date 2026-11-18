@@ -1,65 +1,178 @@
-# Decap CMS config. Replace REPO below with your GitHub "username/repo-name".
+# Sveltia CMS settings for The Six Aquatics.
+# Only labels, hints and layout are set up here — the saved data stays the same.
 backend:
   name: github
   repo: Battleme54321/testingnewsite
   branch: main
+
+site_url: https://thesixaquatics.ca
+display_url: https://thesixaquatics.ca
+logo_url: /img/logo.png
 
 media_folder: img
 public_folder: /img
 
 collections:
   - name: site
-    label: Site
+    label: The Six Aquatics
+    description: "Pick what you want to change, edit it, then press Save. The website updates by itself about 1–2 minutes later."
     files:
+      # ---------------------------------------------------------------- FISH
       - name: stock
-        label: Stock & Prices
+        label: "Fish, prices & stock"
         file: content/stock.json
+        description: "Add, remove or change fish. Use the checkboxes on each fish to mark it Sold out or Coming soon."
         fields:
-          - { name: stock_date, label: "Stock 'as of' date", widget: string }
+          - name: stock_date_auto
+            label: "Show today's date automatically"
+            hint: "ON = the website always shows today's date as the stock date. Turn OFF if you want to type the date yourself in the box below."
+            widget: boolean
+            default: true
+            required: false
+          - name: stock_date
+            label: "Stock date (only used when the switch above is OFF)"
+            hint: "Example: November 16, 2026"
+            widget: string
+            required: false
+
           - name: categories
-            label: Categories
+            label: "Fish groups"
+            label_singular: "fish group"
+            hint: "Each group is a section on the website (Plecos, Tetras, …). Click a group to open it and see its fish. Drag groups to change their order."
             widget: list
-            label_singular: category
+            collapsed: true
             summary: "{{fields.title}}"
             fields:
-              - { name: title, label: Title, widget: string }
-              - { name: nav_label, label: "Short name in top menu (optional - leave blank to use the title)", widget: string, required: false }
-              - { name: description, label: Description (optional), widget: string, required: false }
+              - name: title
+                label: "Group name"
+                hint: "Shown as the section title, e.g. Tetra"
+                widget: string
+              - name: nav_label
+                label: "Short name for the menu (optional)"
+                hint: "Leave blank to use the group name."
+                widget: string
+                required: false
+              - name: description
+                label: "Small note next to the group name (optional)"
+                hint: "Example: Plecos and armored catfish."
+                widget: string
+                required: false
+
               - name: items
-                label: Items
+                label: "Fish in this group"
+                label_singular: "fish"
+                hint: "Click a fish to edit it. Press “+ Add fish” for a new one. Drag to reorder."
                 widget: list
-                label_singular: item
-                summary: "{{fields.name}} — {{fields.price}}{{fields.sold_out}}"
+                collapsed: true
+                summary: "{{fields.name}}  ·  {{fields.price}}{{fields.sold_out | ternary('  ·  SOLD OUT', '')}}{{fields.coming_soon | ternary('  ·  COMING SOON', '')}}"
                 fields:
-                  - { name: name, label: Name, widget: string }
-                  - { name: size, label: Size / quantity, widget: string }
-                  - { name: price, label: Price (e.g. $65 or 6/$30), widget: string }
-                  - { name: image, label: Photo, widget: image }
-                  - { name: sold_out, label: Sold out?, widget: boolean, default: false }
-                  - { name: coming_soon, label: Coming soon?, widget: boolean, default: false, required: false }
-                  - { name: stock_text, label: "Stock text next to price (e.g. 295 in stock) - leave blank to hide", widget: string, required: false }
-                  - { name: show_dot, label: "Show green pulsing dot next to stock text?", widget: boolean, default: true, required: false }
+                  - name: image
+                    label: "Photo"
+                    hint: "Drag a photo here or click to upload. Square-ish or wide photos look best."
+                    widget: image
+                  - name: name
+                    label: "Fish name"
+                    hint: "Put the scientific name in brackets and it shows in italics underneath, e.g. Cardinal Tetra (Paracheirodon axelrodi)"
+                    widget: string
+                  - name: price
+                    label: "Price"
+                    hint: "Examples: $65   or   6/$30"
+                    widget: string
+                  - name: size
+                    label: "Size or amount"
+                    hint: "Examples: 6-8 cm   or   170g"
+                    widget: string
+                    required: false
+
+                  - name: sold_out
+                    label: "Sold out"
+                    hint: "Tick to show a red SOLD OUT badge. The fish stays on the site, greyed out."
+                    widget: boolean
+                    default: false
+                    required: false
+                  - name: coming_soon
+                    label: "Coming soon"
+                    hint: "Tick to show an orange COMING SOON badge. (If Sold out is also ticked, Sold out wins.)"
+                    widget: boolean
+                    default: false
+                    required: false
+
+                  - name: stock_text
+                    label: "Stock text next to the price (optional)"
+                    hint: "Type anything, e.g. 24 in stock  or  Only 3 left. Leave blank to show nothing."
+                    widget: string
+                    required: false
+                  - name: show_dot
+                    label: "Show the green pulsing dot before the stock text"
+                    hint: "Turn off to show just the text."
+                    widget: boolean
+                    default: true
+                    required: false
+
+      # ---------------------------------------------------------------- TEXT
       - name: settings
-        label: Text & Contact
+        label: "Website text & contact info"
         file: content/settings.json
+        description: "The words, photos and links on the rest of the website."
         fields:
-          - { name: brand_first, label: Logo text (white part), widget: string }
-          - { name: brand_second, label: Logo text (teal part), widget: string }
-          - { name: email, label: Order email, widget: string }
-          - { name: instagram, label: Instagram link, widget: string }
-          - { name: facebook, label: Facebook link, widget: string }
-          - { name: logo_image, label: Logo (shown at top of page), widget: image }
-          - { name: hero_image, label: Hero photo, widget: image }
-          - { name: hero_eyebrow, label: Small text above headline, widget: string }
-          - { name: hero_title, label: Headline, widget: string }
-          - { name: hero_text, label: Intro paragraph, widget: text }
+          - name: email
+            label: "Order email address"
+            hint: "Used for the Email us button."
+            widget: string
+          - name: instagram
+            label: "Instagram link"
+            widget: string
+          - name: facebook
+            label: "Facebook link"
+            widget: string
+
+          - name: hero_eyebrow
+            label: "Top of page: small text above the headline"
+            hint: "Example: Toronto, Ontario"
+            widget: string
+          - name: hero_title
+            label: "Top of page: big headline"
+            hint: "The last two words show in teal italics."
+            widget: string
+          - name: hero_text
+            label: "Top of page: intro paragraph"
+            widget: text
+          - name: hero_image
+            label: "Top of page: big aquarium photo"
+            hint: "A wide photo works best."
+            widget: image
+
           - name: info_cards
-            label: Delivery / shipping boxes
+            label: "Delivery & shipping boxes"
+            label_singular: "box"
             widget: list
+            summary: "{{fields.title}}"
             fields:
-              - { name: title, label: Title, widget: string }
-              - { name: text, label: Text, widget: text }
-          - { name: stock_note, label: Note under "Current Stock", widget: string }
-          - { name: contact_title, label: Contact heading, widget: string }
-          - { name: contact_text, label: Contact paragraph, widget: text }
-          - { name: footer, label: Footer text, widget: string }
+              - { name: title, label: "Title", widget: string }
+              - { name: text, label: "Text", widget: text }
+
+          - name: stock_note
+            label: "Note next to “Current stock”"
+            hint: "Example: Sizes are average — actual fish may be slightly bigger or smaller."
+            widget: string
+
+          - name: contact_title
+            label: "Bottom of page: order heading"
+            widget: string
+          - name: contact_text
+            label: "Bottom of page: order paragraph"
+            hint: "If you include the email address, it becomes a clickable link."
+            widget: text
+
+          - name: logo_image
+            label: "Logo"
+            widget: image
+          - name: brand_first
+            label: "Name in top bar (white part)"
+            widget: string
+          - name: brand_second
+            label: "Name in top bar (teal part)"
+            widget: string
+          - name: footer
+            label: "Footer text (very bottom)"
+            widget: string

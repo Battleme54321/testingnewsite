@@ -21,6 +21,7 @@
     fetch('/content/stock.json').then(function (r) { return r.json(); })
   ]).then(function (d) { window.__otherData = { settings: d[0], stock: d[1] }; });
 
+  CMS.registerPreviewStyle('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&display=swap');
   CMS.registerPreviewStyle('/site.css');
   CMS.registerPreviewTemplate('stock', makePreview('stock'));
   CMS.registerPreviewTemplate('settings', makePreview('settings'));
