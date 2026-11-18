@@ -170,11 +170,19 @@ function initPage(root) {
 
   // Lightbox
   const lb = $('[data-lb]'), lbImg = $('img', lb), lbCap = $('figcaption', lb);
-  const close = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); };
+  const close = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lb._token = (lb._token || 0) + 1; setTimeout(() => { if (!lb.classList.contains('open')) lbImg.removeAttribute('src'); }, 260); };
   root.addEventListener('click', e => {
     const m = e.target.closest('.card-media');
     if (m && m.dataset.full) {
-      lbImg.src = m.dataset.full; lbImg.alt = m.dataset.name;
+      // Show the card's already-loaded photo instantly, then swap in the full-size one when it's ready
+      // (stops the previously opened fish from flashing up first).
+      const thumb = m.querySelector('img'), full = m.dataset.full, token = (lb._token = (lb._token || 0) + 1);
+      lbImg.src = thumb && thumb.currentSrc ? thumb.currentSrc : full; lbImg.alt = m.dataset.name;
+      if (lbImg.src !== new URL(full, location.href).href) {
+        const pre = new Image();
+        pre.onload = () => { if (lb._token === token) lbImg.src = full; };
+        pre.src = full;
+      }
       lbCap.innerHTML = ''; lbCap.append(m.dataset.name);
       if (m.dataset.sci) { const i = document.createElement('i'); i.textContent = m.dataset.sci; lbCap.append(i); }
       lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
