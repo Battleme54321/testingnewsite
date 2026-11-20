@@ -340,7 +340,7 @@
           "name": "Sterbai Cory (Hoplisoma sterbai)",
           "price": "$10",
           "size": "2.5-3 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -518,7 +518,7 @@
           "name": "Bllueberry Tetra (Hyphessobrycon wadai)",
           "price": "$12",
           "size": "3-3.5 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
