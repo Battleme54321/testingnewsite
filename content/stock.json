@@ -378,7 +378,7 @@
           "name": "Cardinal Tetra (Paracheirodon axelrodi)",
           "price": "6/$25",
           "size": "2.5*3 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -388,7 +388,7 @@
           "name": "Rummynose Tetra (Hemigrammus bleheri)",
           "price": "6/$30",
           "size": "3-3.5 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -515,7 +515,7 @@
         },
         {
           "image": "/img/IMG_4688.jpeg",
-          "name": "Bllueberry Tetra (Hyphessobrycon wadai)",
+          "name": "Blueberry Tetra (Hyphessobrycon wadai)",
           "price": "$12",
           "size": "3-3.5 cm",
           "sold_out": true,
