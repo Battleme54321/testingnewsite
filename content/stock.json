@@ -350,7 +350,7 @@
           "name": "CW28 Super Schwartzi Cory (Hoplisoma sp)",
           "price": "$40",
           "size": "3-4 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -684,7 +684,7 @@
           "name": "Neon Dwarf Rainbowfish (Melanotaenia praecox)",
           "price": "$8",
           "size": "2.5-3 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
