@@ -508,7 +508,7 @@
           "name": "Peugot Tetra (Hyphessobrycon peugeoti)",
           "price": "$35",
           "size": "2-2.5 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -518,7 +518,7 @@
           "name": "Blueberry Tetra (Hyphessobrycon wadai)",
           "price": "$12",
           "size": "3-3.5 cm",
-          "sold_out": true,
+          "sold_out": false,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -586,7 +586,7 @@
           "name": "Phoenix Rasbora (Boraras merah)",
           "price": "6/$30",
           "size": "1.5-2 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
