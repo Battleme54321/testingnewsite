@@ -152,7 +152,7 @@
           "name": "Titanic Pleco L273 (Leporacanthicus joselimai)",
           "price": "$250",
           "size": "14-16 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
@@ -320,7 +320,7 @@
           "name": "Golden Panda Cory (Hoplisoma panda var)",
           "price": "$15",
           "size": "2.5-3 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
