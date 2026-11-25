@@ -944,7 +944,7 @@
           "name": "Bloody Mary Hillstream Loach (Gastromyzon sp)",
           "price": "$35",
           "size": "2.5-3 cm",
-          "sold_out": false,
+          "sold_out": true,
           "coming_soon": false,
           "stock_text": "",
           "show_dot": true
